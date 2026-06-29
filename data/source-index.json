@@ -1,0 +1,40 @@
+[
+  {
+    "id": "public-seed-audio-search-2026-06-29",
+    "type": "public_x_search_sample",
+    "status": "included",
+    "search_window": {
+      "since": "2026-06-24",
+      "until": "2026-06-30",
+      "accepted_date_span_utc": {
+        "start": "2026-06-24T01:47:15+00:00",
+        "end": "2026-06-29T09:33:54+00:00"
+      }
+    },
+    "queries": [
+      "\"seed audio\" since:2026-06-24 until:2026-06-30",
+      "\"Seed-Audio\" since:2026-06-24 until:2026-06-30",
+      "\"SeedAudio\" since:2026-06-24 until:2026-06-30"
+    ],
+    "raw_post_count": 182,
+    "accepted_count": 93,
+    "selected_case_count": 12,
+    "outputs": [
+      "data/use-cases.json",
+      "data/voice-list.json",
+      "media/cases/",
+      "docs/recent-x-use-cases.md"
+    ],
+    "review_queue_count": 20,
+    "selection_policy": "strong_evidence_public_sources_only",
+    "media_download_count": 12
+  },
+  {
+    "id": "legacy-x-2071255504907891186",
+    "type": "public_x_post",
+    "source_url": "https://x.com/tarumainfo/status/2071255504907891186",
+    "author": "tarumainfo",
+    "status": "included_in_use_case_evidence",
+    "case_number": 6
+  }
+]

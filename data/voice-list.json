@@ -1,0 +1,181 @@
+{
+  "metadata": {
+    "model": "Seed-Audio 1.0",
+    "generated_date": "2026-06-29",
+    "source_type": "evolink_docs_voice_list",
+    "source_doc_url": "https://docs.evolink.ai/en/api-manual/audio-series/doubao-seed-audio/doubao-seed-audio-1-0-voices",
+    "definition": "Preset voice list for audio_references. Use voice_type as a preset Voice ID.",
+    "voice_count": 23,
+    "non_chinese_voice_count": 15,
+    "chinese_voice_count": 8,
+    "rendering_policy": {
+      "README.md": "render non-Chinese preset voices as a table",
+      "README_zh-CN.md": "render up to the first 50 Chinese preset voices as a table",
+      "README_zh-TW.md": "render up to the first 50 Chinese preset voices as a table",
+      "other_localized_readmes": "link to this voice source file instead of rendering the table"
+    }
+  },
+  "voices": [
+    {
+      "scenario": "Multilingual",
+      "voice_name": "Charlie 2.0",
+      "voice_type": "ICL_uranus_en_female_charlie_tob",
+      "language": "American English (美式英语)",
+      "language_group": "non_chinese"
+    },
+    {
+      "scenario": "Multilingual",
+      "voice_name": "Ethan 2.0",
+      "voice_type": "ICL_uranus_en_male_ethan_tob",
+      "language": "Australian English (澳式英语)",
+      "language_group": "non_chinese"
+    },
+    {
+      "scenario": "Multilingual",
+      "voice_name": "Alastor 2.0",
+      "voice_type": "ICL_uranus_en_male_alastor_tob",
+      "language": "British English (英式英语)",
+      "language_group": "non_chinese"
+    },
+    {
+      "scenario": "Multilingual",
+      "voice_name": "Chucky 2.0",
+      "voice_type": "ICL_uranus_en_male_chucky_tob",
+      "language": "American English (美式英语)",
+      "language_group": "non_chinese"
+    },
+    {
+      "scenario": "Multilingual",
+      "voice_name": "Noah 2.0",
+      "voice_type": "ICL_uranus_en_male_noah_tob",
+      "language": "American English (美式英语)",
+      "language_group": "non_chinese"
+    },
+    {
+      "scenario": "Multilingual",
+      "voice_name": "Jigsaw 2.0",
+      "voice_type": "ICL_uranus_en_male_jigsaw_tob",
+      "language": "American English (美式英语)",
+      "language_group": "non_chinese"
+    },
+    {
+      "scenario": "Multilingual",
+      "voice_name": "Clown Man 2.0",
+      "voice_type": "ICL_uranus_en_male_clown_man_tob",
+      "language": "American English (美式英语)",
+      "language_group": "non_chinese"
+    },
+    {
+      "scenario": "Multilingual",
+      "voice_name": "Cartoon Chef 2.0",
+      "voice_type": "ICL_uranus_en_male_cartoon_chef_tob",
+      "language": "American English (美式英语)",
+      "language_group": "non_chinese"
+    },
+    {
+      "scenario": "Multilingual",
+      "voice_name": "Frosty Man 2.0",
+      "voice_type": "ICL_uranus_en_male_frosty_man_tob",
+      "language": "American English (美式英语)",
+      "language_group": "non_chinese"
+    },
+    {
+      "scenario": "Multilingual",
+      "voice_name": "The Grinch 2.0",
+      "voice_type": "ICL_uranus_en_male_the_grinch_tob",
+      "language": "American English (美式英语)",
+      "language_group": "non_chinese"
+    },
+    {
+      "scenario": "Multilingual",
+      "voice_name": "Kevin McCallister 2.0",
+      "voice_type": "ICL_uranus_en_male_kevin_mccallister_tob",
+      "language": "American English (美式英语)",
+      "language_group": "non_chinese"
+    },
+    {
+      "scenario": "Multilingual",
+      "voice_name": "Michael 2.0",
+      "voice_type": "ICL_uranus_en_male_michael_tob",
+      "language": "American English (美式英语)",
+      "language_group": "non_chinese"
+    },
+    {
+      "scenario": "Multilingual",
+      "voice_name": "Big Boogie 2.0",
+      "voice_type": "ICL_uranus_en_male_big_boogie_tob",
+      "language": "American English (美式英语)",
+      "language_group": "non_chinese"
+    },
+    {
+      "scenario": "Multilingual",
+      "voice_name": "Xavier 2.0",
+      "voice_type": "ICL_uranus_en_male_xavier_tob",
+      "language": "American English (美式英语)",
+      "language_group": "non_chinese"
+    },
+    {
+      "scenario": "Multilingual",
+      "voice_name": "Zayne 2.0",
+      "voice_type": "ICL_uranus_en_male_zayne_tob",
+      "language": "American English (美式英语)",
+      "language_group": "non_chinese"
+    },
+    {
+      "scenario": "General",
+      "voice_name": "Vivi 2.0",
+      "voice_type": "zh_female_vv_uranus_bigtts",
+      "language": "中文、日语、印尼语、墨西哥西班牙语；方言：四川话、陕西话、东北话",
+      "language_group": "chinese"
+    },
+    {
+      "scenario": "General",
+      "voice_name": "少年梓辛/Brayan 2.0",
+      "voice_type": "zh_male_shaonianzixin_uranus_bigtts",
+      "language": "中文（英文名 Brayan）",
+      "language_group": "chinese"
+    },
+    {
+      "scenario": "General",
+      "voice_name": "温暖阿虎/Alvin 2.0",
+      "voice_type": "zh_male_wennuanahu_uranus_bigtts",
+      "language": "中文（英文名 Alvin）",
+      "language_group": "chinese"
+    },
+    {
+      "scenario": "General",
+      "voice_name": "萌丫头/Cutey 2.0",
+      "voice_type": "zh_female_mengyatou_uranus_bigtts",
+      "language": "中文（英文名 Cutey）",
+      "language_group": "chinese"
+    },
+    {
+      "scenario": "General",
+      "voice_name": "贴心女声/Candy 2.0",
+      "voice_type": "zh_female_tiexinnvsheng_uranus_bigtts",
+      "language": "中文（英文名 Candy）",
+      "language_group": "chinese"
+    },
+    {
+      "scenario": "General",
+      "voice_name": "鸡汤妹妹/Hope 2.0",
+      "voice_type": "zh_female_jitangmei_uranus_bigtts",
+      "language": "中文（英文名 Hope）",
+      "language_group": "chinese"
+    },
+    {
+      "scenario": "General",
+      "voice_name": "磁性解说男声/Morgan 2.0",
+      "voice_type": "zh_male_cixingjieshuonan_uranus_bigtts",
+      "language": "中文（英文名 Morgan）",
+      "language_group": "chinese"
+    },
+    {
+      "scenario": "Education",
+      "voice_name": "Tina老师 2.0",
+      "voice_type": "zh_female_yingyujiaoxue_uranus_bigtts",
+      "language": "中文、英式英语（支持中英双语教学场景）",
+      "language_group": "chinese"
+    }
+  ]
+}

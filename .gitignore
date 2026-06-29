@@ -1,0 +1,7 @@
+.DS_Store
+tmp/
+*.log
+.codex/
+USECASE_*.md
+data/ingested_tweets.json
+github-repo-banner-output/

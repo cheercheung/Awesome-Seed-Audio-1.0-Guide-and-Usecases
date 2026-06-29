@@ -1,0 +1,61 @@
+name: Submit a Seed-Audio 1.0 case
+description: Suggest a public, source-linked Seed-Audio 1.0 use case for this repository.
+title: "Case submission: "
+labels:
+  - case-submission
+body:
+  - type: input
+    id: source
+    attributes:
+      label: Public source URL
+      description: Link to the original public post, demo, article, integration note, or evaluation.
+      placeholder: https://...
+    validations:
+      required: true
+  - type: input
+    id: creator
+    attributes:
+      label: Creator profile URL
+      description: Link to the author or organization profile.
+      placeholder: https://...
+    validations:
+      required: true
+  - type: dropdown
+    id: type
+    attributes:
+      label: Evidence type
+      options:
+        - Benchmark
+        - Demo
+        - Evaluation
+        - Integration
+        - Tutorial
+        - Limit
+    validations:
+      required: true
+  - type: input
+    id: date
+    attributes:
+      label: Publication date
+      description: Use YYYY-MM-DD.
+      placeholder: "2026-06-29"
+    validations:
+      required: true
+  - type: textarea
+    id: takeaway
+    attributes:
+      label: Usage takeaway
+      description: Explain what this case helps readers evaluate or do.
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Submission checks
+      options:
+        - label: The source is public and directly related to Seed-Audio 1.0.
+          required: true
+        - label: The submission does not include raw exports, private datasets, or local file paths.
+          required: true
+        - label: The claim is source-grounded and does not invent prompts, scores, audio results, or pricing.
+          required: true

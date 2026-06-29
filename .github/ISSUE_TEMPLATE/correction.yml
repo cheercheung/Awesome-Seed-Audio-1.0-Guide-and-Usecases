@@ -1,0 +1,28 @@
+name: Report a correction
+description: Report a broken link, wrong metadata, mistranslation, or unsupported claim.
+title: "Correction: "
+labels:
+  - correction
+body:
+  - type: input
+    id: location
+    attributes:
+      label: Affected file or case
+      placeholder: README.md, Case 12, README_zh-CN.md, etc.
+    validations:
+      required: true
+  - type: textarea
+    id: issue
+    attributes:
+      label: What needs correction?
+      description: Describe the broken link, metadata issue, translation problem, or unsupported claim.
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Supporting source
+      description: Add a public source URL when the correction depends on external evidence.
+      placeholder: https://...
+    validations:
+      required: false

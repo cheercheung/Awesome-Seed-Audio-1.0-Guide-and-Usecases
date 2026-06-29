@@ -1,0 +1,570 @@
+{
+  "metadata": {
+    "model": "Seed-Audio 1.0",
+    "provider": "ByteDance / Doubao",
+    "generated_at": "2026-06-29",
+    "basis": "Recent X/Twitter search for Seed-Audio 1.0 use cases",
+    "queries": [
+      "\"seed audio\" since:2026-06-24 until:2026-06-30",
+      "\"Seed-Audio\" since:2026-06-24 until:2026-06-30",
+      "\"SeedAudio\" since:2026-06-24 until:2026-06-30"
+    ],
+    "raw_post_count": 182,
+    "accepted_count": 93,
+    "selected_case_count": 12,
+    "date_span_utc": {
+      "start": "2026-06-24T01:47:15+00:00",
+      "end": "2026-06-29T09:33:54+00:00"
+    },
+    "language_counts": {
+      "en": 57,
+      "ja": 22,
+      "zh": 7,
+      "zxx": 2,
+      "pl": 1,
+      "ko": 1,
+      "et": 1,
+      "und": 1,
+      "fr": 1
+    },
+    "review_queue_count": 20,
+    "selection_policy": "strong_evidence_public_sources_only"
+  },
+  "categories": [
+    {
+      "title": "Audio-First Video Workflows",
+      "case_numbers": [
+        1,
+        2,
+        3
+      ],
+      "localized_titles": {
+        "zh-CN": "音频优先视频工作流",
+        "zh-TW": "音訊優先影片工作流",
+        "ja": "音声先行の動画ワークフロー",
+        "ko": "오디오 우선 영상 워크플로",
+        "es": "Flujos de video con audio primero",
+        "pt": "Workflows de vídeo guiados por áudio",
+        "de": "Audio-First-Video-Workflows",
+        "fr": "Workflows vidéo pilotés par l'audio",
+        "tr": "Ses öncelikli video iş akışları",
+        "ru": "Видео-процессы от аудио"
+      },
+      "id": "audio-first-video"
+    },
+    {
+      "title": "Audio Drama And Scene Generation",
+      "case_numbers": [
+        4,
+        5
+      ],
+      "localized_titles": {
+        "zh-CN": "音频剧与场景生成",
+        "zh-TW": "音訊劇與場景生成",
+        "ja": "音声ドラマとシーン生成",
+        "ko": "오디오 드라마와 장면 생성",
+        "es": "Audio drama y generación de escenas",
+        "pt": "Áudio drama e geração de cena",
+        "de": "Audio-Drama und Szenengenerierung",
+        "fr": "Fiction audio et génération de scènes",
+        "tr": "Sesli drama ve sahne üretimi",
+        "ru": "Аудиодрама и генерация сцен"
+      },
+      "id": "audio-drama-scene-generation"
+    },
+    {
+      "title": "Reference Voice And Character Casting",
+      "case_numbers": [
+        6,
+        8,
+        10
+      ],
+      "localized_titles": {
+        "zh-CN": "参考声音与角色配音探索",
+        "zh-TW": "參考聲音與角色配音探索",
+        "ja": "参照音声とキャラクター音声探索",
+        "ko": "참조 음성과 캐릭터 보이스 탐색",
+        "es": "Voces de referencia y casting de personajes",
+        "pt": "Vozes de referência e casting de personagens",
+        "de": "Referenzstimmen und Character Casting",
+        "fr": "Voix de référence et casting de personnages",
+        "tr": "Referans sesler ve karakter sesi seçimi",
+        "ru": "Референсные голоса и подбор голоса персонажа"
+      },
+      "id": "voice-reference-character-casting"
+    },
+    {
+      "title": "Tool And Provider Integrations",
+      "case_numbers": [
+        7,
+        11
+      ],
+      "localized_titles": {
+        "zh-CN": "工具与服务商集成",
+        "zh-TW": "工具與服務商整合",
+        "ja": "ツールとプロバイダー統合",
+        "ko": "도구 및 제공자 통합",
+        "es": "Integraciones de herramientas y proveedores",
+        "pt": "Integrações de ferramentas e provedores",
+        "de": "Tool- und Provider-Integrationen",
+        "fr": "Intégrations d'outils et de fournisseurs",
+        "tr": "Araç ve sağlayıcı entegrasyonları",
+        "ru": "Интеграции инструментов и провайдеров"
+      },
+      "id": "tool-provider-integrations"
+    },
+    {
+      "title": "Social Narration, Foley, And Cost Tests",
+      "case_numbers": [
+        9,
+        12
+      ],
+      "localized_titles": {
+        "zh-CN": "社交旁白、拟音与成本测试",
+        "zh-TW": "社群旁白、擬音與成本測試",
+        "ja": "SNS ナレーション、フォーリー、コスト検証",
+        "ko": "소셜 내레이션, 폴리, 비용 테스트",
+        "es": "Narración social, foley y pruebas de coste",
+        "pt": "Narração social, foley e testes de custo",
+        "de": "Social Narration, Foley und Kostentests",
+        "fr": "Narration sociale, bruitage et tests de coût",
+        "tr": "Sosyal anlatım, foley ve maliyet testleri",
+        "ru": "Социальная озвучка, foley и тесты стоимости"
+      },
+      "id": "social-narration-foley-cost-tests"
+    }
+  ],
+  "cases": [
+    {
+      "number": 1,
+      "category": "audio-first-video",
+      "title": "Six-Speaker Audio To Guide Seedance Video",
+      "source_url": "https://x.com/gokayfem/status/2070429287950188547",
+      "author": "gokayfem",
+      "author_name": "gokaygokay",
+      "author_url": "https://x.com/gokayfem",
+      "type": "Tutorial",
+      "date": "2026-06-26",
+      "takeaway": "build an audio-first video pipeline where a public Seed Audio prompt creates six-character dialogue and background effects before image and Seedance video generation.",
+      "notes": "The source publishes the concrete Seed Audio prompt for a rain-soaked getaway van scene, then pairs it with a Nano Banana Pro image prompt and a Seedance 2.0 video prompt. This is strong evidence for using generated audio as timing, dialogue, and ambience guidance for later video generation.",
+      "original_number": 3,
+      "evidence_strength": "strong",
+      "localized_titles": {
+        "zh-CN": "用六人音频引导 Seedance 视频",
+        "zh-TW": "用六人音訊引導 Seedance 影片",
+        "ja": "6 人の音声で Seedance 動画を誘導",
+        "ko": "6명 음성으로 Seedance 영상 유도",
+        "es": "Audio de seis hablantes para guiar video en Seedance",
+        "pt": "Áudio com seis falantes para guiar vídeo no Seedance",
+        "de": "Sechs Sprecher als Audioführung für Seedance-Video",
+        "fr": "Audio à six voix pour guider une vidéo Seedance",
+        "tr": "Seedance videosunu yönlendiren altı konuşmacılı ses",
+        "ru": "Аудио с шестью голосами для управления видео Seedance"
+      },
+      "media": {
+        "type": "video",
+        "path": "media/cases/case-01.mp4",
+        "thumbnail_path": "media/cases/case-01.jpg",
+        "source": "x_twitter_tweet",
+        "source_tweet_id": "2070429287950188547",
+        "source_url": "https://x.com/gokayfem/status/2070429287950188547",
+        "download_url": "https://video.twimg.com/amplify_video/2070427848414744576/vid/avc1/1280x720/dGkKE_H5iHVsvdxR.mp4"
+      }
+    },
+    {
+      "number": 2,
+      "category": "audio-first-video",
+      "title": "Multi-Clip Story Video Audio Planning",
+      "source_url": "https://x.com/gavinpurcell/status/2070246132341727506",
+      "author": "gavinpurcell",
+      "author_name": "Gavin Purcell",
+      "author_url": "https://x.com/gavinpurcell",
+      "type": "Evaluation",
+      "date": "2026-06-25",
+      "takeaway": "evaluate agent-assisted soundscape generation for multi-clip story videos, including the remaining mismatch risk between effects and on-screen action.",
+      "notes": "The author explains that consistent audio is difficult in Seedance multi-clip stories, then tests a pipeline where an existing one-minute low-resolution video is handed to Claude Code and Codex with a FAL key. A same-author follow-up says the process was acceptable but some sound effects did not match exactly, so this case should preserve the limitation.",
+      "original_number": 4,
+      "evidence_strength": "strong",
+      "localized_titles": {
+        "zh-CN": "多片段故事视频的音频规划",
+        "zh-TW": "多片段故事影片的音訊規劃",
+        "ja": "マルチクリップ物語動画の音声設計",
+        "ko": "멀티클립 스토리 영상의 오디오 설계",
+        "es": "Planificación de audio para historias multiclips",
+        "pt": "Planejamento de áudio para histórias em múltiplos clipes",
+        "de": "Audioplanung für Multi-Clip-Storyvideos",
+        "fr": "Planification audio pour récit multi-clips",
+        "tr": "Çok klipli hikaye videosu için ses planlama",
+        "ru": "Аудиопланирование для многофрагментной истории"
+      },
+      "media": {
+        "type": "video",
+        "path": "media/cases/case-02.mp4",
+        "thumbnail_path": "media/cases/case-02.jpg",
+        "source": "x_twitter_tweet",
+        "source_tweet_id": "2070246132341727506",
+        "source_url": "https://x.com/gavinpurcell/status/2070246132341727506",
+        "download_url": "https://video.twimg.com/amplify_video/2070245820671365120/vid/avc1/1280x720/yPIHRpNeILkgd_dz.mp4"
+      }
+    },
+    {
+      "number": 3,
+      "category": "audio-first-video",
+      "title": "Audio-First Seedance Reference Workflow",
+      "source_url": "https://x.com/EvoLinkAi/status/2070722722217578562",
+      "author": "EvoLinkAi",
+      "author_name": "EvoLink.ai",
+      "author_url": "https://x.com/EvoLinkAi",
+      "type": "Tutorial",
+      "date": "2026-06-27",
+      "takeaway": "use a three-step official workflow: generate Seed-Audio first, create a key visual, then feed both audio and visual references into Seedance 2 reference-to-video.",
+      "notes": "The source explicitly states that audio-first generation gives the video model stronger direction for music, narration, ambience, and timing. The surrounding thread also identifies Seed-Audio as full audio generation rather than only text-to-speech.",
+      "original_number": 5,
+      "evidence_strength": "strong",
+      "localized_titles": {
+        "zh-CN": "音频优先的 Seedance 参考工作流",
+        "zh-TW": "音訊優先的 Seedance 參考工作流",
+        "ja": "音声先行の Seedance 参照ワークフロー",
+        "ko": "오디오 우선 Seedance 참조 워크플로",
+        "es": "Flujo Seedance con audio primero",
+        "pt": "Workflow Seedance guiado primeiro por áudio",
+        "de": "Audio-First Seedance-Referenzworkflow",
+        "fr": "Workflow Seedance piloté d'abord par l'audio",
+        "tr": "Ses öncelikli Seedance referans iş akışı",
+        "ru": "Audio-first рабочий процесс Seedance"
+      },
+      "media": {
+        "type": "video",
+        "path": "media/cases/case-03.mp4",
+        "thumbnail_path": "media/cases/case-03.jpg",
+        "source": "x_twitter_quoted_tweet",
+        "source_tweet_id": "2070438167019409582",
+        "source_url": "https://x.com/genel_ai/status/2070438167019409582",
+        "download_url": "https://video.twimg.com/amplify_video/2070428838451179520/vid/avc1/1920x1080/s9tJ7bOOwIbqg6xv.mp4"
+      }
+    },
+    {
+      "number": 4,
+      "category": "audio-drama-scene-generation",
+      "title": "Two-Minute Dialogue With Ambience",
+      "source_url": "https://x.com/tarumainfo/status/2071255504907891186",
+      "author": "tarumainfo",
+      "author_name": "taruma sakti",
+      "author_url": "https://x.com/tarumainfo",
+      "type": "Demo",
+      "date": "2026-06-28",
+      "takeaway": "write script-format audio drama prompts with ambience, character voices, background music, and line-level performance direction.",
+      "notes": "The source includes a two-minute claustrophobic domestic confrontation prompt using INTENT, AESTHETIC, and EXECUTION sections. It specifies fluorescent hum, refrigerator vibration, two character voice profiles, emotional delivery, and full dialogue lines, making it one of the strongest reusable prompt cases.",
+      "original_number": 6,
+      "evidence_strength": "strong",
+      "localized_titles": {
+        "zh-CN": "带环境声的两分钟对白",
+        "zh-TW": "帶環境聲的兩分鐘對白",
+        "ja": "環境音付き 2 分間ダイアログ",
+        "ko": "환경음이 포함된 2분 대화",
+        "es": "Diálogo de dos minutos con ambiente",
+        "pt": "Diálogo de dois minutos com ambiência",
+        "de": "Zwei-Minuten-Dialog mit Atmosphäre",
+        "fr": "Dialogue de deux minutes avec ambiance",
+        "tr": "Ambiyanslı iki dakikalık diyalog",
+        "ru": "Двухминутный диалог с атмосферой"
+      },
+      "media": {
+        "type": "video",
+        "path": "media/cases/case-04.mp4",
+        "thumbnail_path": "media/cases/case-04.jpg",
+        "source": "x_twitter_tweet",
+        "source_tweet_id": "2071255504907891186",
+        "source_url": "https://x.com/tarumainfo/status/2071255504907891186",
+        "download_url": "https://video.twimg.com/amplify_video/2071252034599387136/vid/avc1/1920x1080/B6dFMCBSu9XTy1kI.mp4"
+      }
+    },
+    {
+      "number": 5,
+      "category": "audio-drama-scene-generation",
+      "title": "Museum Guide Scene-Level Dialogue",
+      "source_url": "https://x.com/TomLikesRobots/status/2070923534449119424",
+      "author": "TomLikesRobots",
+      "author_name": "TomLikesRobots",
+      "author_url": "https://x.com/TomLikesRobots",
+      "type": "Demo",
+      "date": "2026-06-27",
+      "takeaway": "test scene-level dialogue reasoning where Seed-Audio writes delivery and character voices from a compact situational prompt.",
+      "notes": "The author gives Seed-Audio a museum-guide prompt explaining the phrase crossing the Rubicon to a confused visitor. The model generated the dialogue, delivery, and character voices; the author then generated a matching image in Nano Banana and used Seedance 2 to make a video.",
+      "original_number": 7,
+      "evidence_strength": "strong",
+      "localized_titles": {
+        "zh-CN": "博物馆导览式场景对白",
+        "zh-TW": "博物館導覽式場景對白",
+        "ja": "博物館ガイド風の場面対話",
+        "ko": "박물관 안내 장면 대화",
+        "es": "Diálogo de escena con guía de museo",
+        "pt": "Diálogo de cena com guia de museu",
+        "de": "Szenendialog mit Museumsführer",
+        "fr": "Dialogue de scène avec guide de musée",
+        "tr": "Müze rehberi sahne diyaloğu",
+        "ru": "Сценический диалог с музейным гидом"
+      },
+      "media": {
+        "type": "video",
+        "path": "media/cases/case-05.mp4",
+        "thumbnail_path": "media/cases/case-05.jpg",
+        "source": "x_twitter_tweet",
+        "source_tweet_id": "2070923534449119424",
+        "source_url": "https://x.com/TomLikesRobots/status/2070923534449119424",
+        "download_url": "https://video.twimg.com/amplify_video/2070922637551759361/vid/avc1/1280x720/yV5DFaF9BXwgAYwG.mp4"
+      }
+    },
+    {
+      "number": 6,
+      "category": "voice-reference-character-casting",
+      "title": "Reference Voice MC Workflow",
+      "source_url": "https://x.com/JPAI_HEAVEN/status/2070842306329227264",
+      "author": "JPAI_HEAVEN",
+      "author_name": "AI Gal Story",
+      "author_url": "https://x.com/JPAI_HEAVEN",
+      "type": "Tutorial",
+      "date": "2026-06-27",
+      "takeaway": "generate a recurring MC voice from reference material, split the resulting audio, and use it as a Seedance 2.0 lip-sync reference.",
+      "notes": "The source describes a two-step test: reference a source voice to generate about one minute of MC audio in Seed Audio, then split that voice and pass it into Seedance 2.0 for video. It also reports a practical caveat: the voice changes slightly during downstream video generation, creating editing work.",
+      "original_number": 9,
+      "evidence_strength": "strong",
+      "localized_titles": {
+        "zh-CN": "参考声音 MC 工作流",
+        "zh-TW": "參考聲音 MC 工作流",
+        "ja": "参照音声 MC ワークフロー",
+        "ko": "참조 음성 MC 워크플로",
+        "es": "Flujo de MC con voz de referencia",
+        "pt": "Workflow de MC com voz de referência",
+        "de": "MC-Workflow mit Referenzstimme",
+        "fr": "Workflow de MC avec voix de référence",
+        "tr": "Referans sesli MC iş akışı",
+        "ru": "MC-процесс с референсным голосом"
+      },
+      "media": {
+        "type": "video",
+        "path": "media/cases/case-06.mp4",
+        "thumbnail_path": "media/cases/case-06.jpg",
+        "source": "x_twitter_tweet",
+        "source_tweet_id": "2070842306329227264",
+        "source_url": "https://x.com/JPAI_HEAVEN/status/2070842306329227264",
+        "download_url": "https://video.twimg.com/amplify_video/2070840680382119936/vid/avc1/1280x720/kn4Q0ypgFARyGLLL.mp4"
+      }
+    },
+    {
+      "number": 7,
+      "category": "tool-provider-integrations",
+      "title": "Claude MCP Voiceover And Dubbing Integration",
+      "source_url": "https://x.com/higgsfield/status/2070916672106680360",
+      "author": "higgsfield",
+      "author_name": "Higgsfield AI",
+      "author_url": "https://x.com/higgsfield",
+      "type": "Integration",
+      "date": "2026-06-27",
+      "takeaway": "route voiceovers, voice cloning, and multilingual dubbing through Claude via Higgsfield MCP, with Seed Audio 1.0 as part of the audio stack.",
+      "notes": "Higgsfield states that Claude can generate audio through its MCP integration, covering voiceovers, voice cloning, and dubbing in 50+ languages powered by Seed Audio 1.0 and ElevenLabs v3. A same-author reply provides the MCP access link, so this is a provider integration case rather than a standalone API tutorial.",
+      "original_number": 10,
+      "evidence_strength": "strong",
+      "localized_titles": {
+        "zh-CN": "Claude MCP 旁白与多语言配音集成",
+        "zh-TW": "Claude MCP 旁白與多語配音整合",
+        "ja": "Claude MCP のボイスオーバーと多言語吹き替え統合",
+        "ko": "Claude MCP 보이스오버 및 다국어 더빙 통합",
+        "es": "Integración de locución y doblaje en Claude MCP",
+        "pt": "Integração de narração e dublagem no Claude MCP",
+        "de": "Claude MCP Integration für Voiceover und Synchronisation",
+        "fr": "Intégration voix off et doublage dans Claude MCP",
+        "tr": "Claude MCP seslendirme ve dublaj entegrasyonu",
+        "ru": "Интеграция озвучки и дубляжа в Claude MCP"
+      },
+      "media": {
+        "type": "video",
+        "path": "media/cases/case-07.mp4",
+        "thumbnail_path": "media/cases/case-07.jpg",
+        "source": "x_twitter_tweet",
+        "source_tweet_id": "2070916672106680360",
+        "source_url": "https://x.com/higgsfield/status/2070916672106680360",
+        "download_url": "https://video.twimg.com/amplify_video/2070916180701790210/vid/avc1/1920x1080/ZbbVXCjQ1t3UIZm-.mp4"
+      }
+    },
+    {
+      "number": 8,
+      "category": "voice-reference-character-casting",
+      "title": "Reference Audio Quality And High-Voice Caveat",
+      "source_url": "https://x.com/genel_ai/status/2070438167019409582",
+      "author": "genel_ai",
+      "author_name": "GENEL | AI video production",
+      "author_url": "https://x.com/genel_ai",
+      "type": "Evaluation",
+      "date": "2026-06-26",
+      "takeaway": "evaluate Japanese speech stability, emotion following, reference-audio precision, and high-pitch mechanical artifacts from hands-on use.",
+      "notes": "The source reports that Seed Audio Japanese output was more stable than Seedance 2.0 audio, followed emotion in dialogue, and had strong reference-audio precision with a 30-second maximum. It also records limits: audio and image references cannot be used together, and higher voices can sound more mechanical.",
+      "original_number": 11,
+      "evidence_strength": "strong",
+      "localized_titles": {
+        "zh-CN": "参考音频质量与高声线限制",
+        "zh-TW": "參考音訊品質與高聲線限制",
+        "ja": "参照音声品質と高音ボイスの制約",
+        "ko": "참조 오디오 품질과 높은 음역 제한",
+        "es": "Calidad de audio de referencia y límite en voces agudas",
+        "pt": "Qualidade de áudio de referência e limite em vozes agudas",
+        "de": "Referenzaudio-Qualität und Grenze hoher Stimmen",
+        "fr": "Qualité de l'audio de référence et limite des voix aiguës",
+        "tr": "Referans ses kalitesi ve tiz ses sınırı",
+        "ru": "Качество референсного аудио и ограничение высоких голосов"
+      },
+      "media": {
+        "type": "video",
+        "path": "media/cases/case-08.mp4",
+        "thumbnail_path": "media/cases/case-08.jpg",
+        "source": "x_twitter_tweet",
+        "source_tweet_id": "2070438167019409582",
+        "source_url": "https://x.com/genel_ai/status/2070438167019409582",
+        "download_url": "https://video.twimg.com/amplify_video/2070428838451179520/vid/avc1/1920x1080/s9tJ7bOOwIbqg6xv.mp4"
+      }
+    },
+    {
+      "number": 9,
+      "category": "long-form-cost-limits",
+      "title": "Narrated Social Story Engine",
+      "source_url": "https://x.com/deepwhitman/status/2071485165390704837",
+      "author": "deepwhitman",
+      "author_name": "Bilal",
+      "author_url": "https://x.com/deepwhitman",
+      "type": "Demo",
+      "date": "2026-06-29",
+      "takeaway": "turn public text-story posts into narrated social entertainment and evaluate whether the format can become a repeatable content engine.",
+      "notes": "The author narrates a popular AITA-style post with Seed Audio 1.0 and explicitly frames the result as a possible viral content engine. A same-author reply links the original post, grounding the case in a real text-to-narration workflow.",
+      "original_number": 14,
+      "evidence_strength": "strong",
+      "localized_titles": {
+        "zh-CN": "社交故事旁白内容引擎",
+        "zh-TW": "社群故事旁白內容引擎",
+        "ja": "SNS ストーリー朗読エンジン",
+        "ko": "소셜 스토리 내레이션 엔진",
+        "es": "Motor de narración para historias sociales",
+        "pt": "Motor de narração para histórias sociais",
+        "de": "Narrationsmaschine für Social Stories",
+        "fr": "Moteur de narration pour histoires sociales",
+        "tr": "Sosyal hikaye anlatım motoru",
+        "ru": "Движок озвучки социальных историй"
+      },
+      "media": {
+        "type": "video",
+        "path": "media/cases/case-09.mp4",
+        "thumbnail_path": "media/cases/case-09.jpg",
+        "source": "x_twitter_tweet",
+        "source_tweet_id": "2071485165390704837",
+        "source_url": "https://x.com/deepwhitman/status/2071485165390704837",
+        "download_url": "https://video.twimg.com/amplify_video/2071484888499531776/vid/avc1/1920x1080/LxcuOZA6E0g50PPq.mp4"
+      }
+    },
+    {
+      "number": 10,
+      "category": "voice-reference-character-casting",
+      "title": "Image-Guided Character Voice Casting",
+      "source_url": "https://x.com/tc50501/status/2070498347824337389",
+      "author": "tc50501",
+      "author_name": "Pixel Gnarly",
+      "author_url": "https://x.com/tc50501",
+      "type": "Evaluation",
+      "date": "2026-06-26",
+      "takeaway": "use reference images for early character voice casting while treating pitch and tone stability as unresolved production risks.",
+      "notes": "The author tests image-to-audio by passing only a female character reference image and generating three roughly ten-second lines. Two outputs were directionally close, while one was clearly too high, so the source supports character voice exploration but not final voice-lock production.",
+      "original_number": 15,
+      "evidence_strength": "strong",
+      "localized_titles": {
+        "zh-CN": "图像引导的角色声音探索",
+        "zh-TW": "圖像引導的角色聲音探索",
+        "ja": "画像参照によるキャラクター音声探索",
+        "ko": "이미지 기반 캐릭터 음성 탐색",
+        "es": "Casting de voz de personaje guiado por imagen",
+        "pt": "Casting de voz de personagem guiado por imagem",
+        "de": "Bildgeführtes Casting von Charakterstimmen",
+        "fr": "Casting de voix de personnage guidé par image",
+        "tr": "Görüntü kılavuzlu karakter sesi seçimi",
+        "ru": "Подбор голоса персонажа по изображению"
+      },
+      "media": {
+        "type": "image",
+        "path": "media/cases/case-10.jpg",
+        "source": "x_twitter_tweet",
+        "source_tweet_id": "2070498347824337389",
+        "source_url": "https://x.com/tc50501/status/2070498347824337389",
+        "download_url": "https://pbs.twimg.com/media/HLvjGShbEAAAiPA.jpg"
+      }
+    },
+    {
+      "number": 11,
+      "category": "tool-provider-integrations",
+      "title": "WaveSpeedAI Text, Voice, Image-Guided Audio",
+      "source_url": "https://x.com/wavespeed_ai/status/2071214531280543772",
+      "author": "wavespeed_ai",
+      "author_name": "WaveSpeedAI",
+      "author_url": "https://x.com/wavespeed_ai",
+      "type": "Integration",
+      "date": "2026-06-28",
+      "takeaway": "track provider access for text-to-speech, soundscape generation, preset voices, reference audio, image-guided audio, and tuning controls.",
+      "notes": "WaveSpeedAI announces Seed Audio 1.0 availability and lists natural speech, preset voices, reference audio guidance, image-guided audio, and speed, volume, pitch, and format controls. This is strong provider-route evidence for implementation planning.",
+      "original_number": 16,
+      "evidence_strength": "strong",
+      "localized_titles": {
+        "zh-CN": "WaveSpeedAI 文本、声音与图像引导音频",
+        "zh-TW": "WaveSpeedAI 文字、聲音與圖像引導音訊",
+        "ja": "WaveSpeedAI のテキスト・音声・画像参照オーディオ",
+        "ko": "WaveSpeedAI의 텍스트, 음성, 이미지 참조 오디오",
+        "es": "Audio guiado por texto, voz e imagen en WaveSpeedAI",
+        "pt": "Áudio guiado por texto, voz e imagem no WaveSpeedAI",
+        "de": "Text-, Stimmen- und bildgeführtes Audio bei WaveSpeedAI",
+        "fr": "Audio guidé par texte, voix et image chez WaveSpeedAI",
+        "tr": "WaveSpeedAI'de metin, ses ve görüntü kılavuzlu audio",
+        "ru": "Текстовое, голосовое и image-guided аудио в WaveSpeedAI"
+      },
+      "media": {
+        "type": "video",
+        "path": "media/cases/case-11.mp4",
+        "thumbnail_path": "media/cases/case-11.jpg",
+        "source": "x_twitter_tweet",
+        "source_tweet_id": "2071214531280543772",
+        "source_url": "https://x.com/wavespeed_ai/status/2071214531280543772",
+        "download_url": "https://video.twimg.com/amplify_video/2071154149505605632/vid/avc1/1920x1080/Kj64Rl1JWDtO2860.mp4"
+      }
+    },
+    {
+      "number": 12,
+      "category": "long-form-cost-limits",
+      "title": "Voice Acting, Foley, And Low-Cost Testing",
+      "source_url": "https://x.com/TomLikesRobots/status/2070288519684108353",
+      "author": "TomLikesRobots",
+      "author_name": "TomLikesRobots",
+      "author_url": "https://x.com/TomLikesRobots",
+      "type": "Evaluation",
+      "date": "2026-06-25",
+      "takeaway": "use Seed-Audio as a low-cost test layer for voice acting and foley before committing to downstream video generation.",
+      "notes": "The source reports early tests where voice acting and foley felt better than native Seedance 2 audio, with a 15-second test costing only a few cents. Comments add useful caveats: reference voice conversion can fail, and the best workflow for using generated audio with Seedance lip-sync remains unresolved.",
+      "original_number": 20,
+      "evidence_strength": "strong",
+      "localized_titles": {
+        "zh-CN": "低成本测试声音表演与拟音",
+        "zh-TW": "低成本測試聲音表演與擬音",
+        "ja": "声の演技とフォーリーの低コスト検証",
+        "ko": "음성 연기와 폴리의 저비용 테스트",
+        "es": "Prueba de bajo coste para actuación de voz y foley",
+        "pt": "Teste de baixo custo para atuação vocal e foley",
+        "de": "Günstiger Test für Voice Acting und Foley",
+        "fr": "Test économique pour jeu vocal et bruitage",
+        "tr": "Ses oyunculuğu ve foley için düşük maliyetli test",
+        "ru": "Недорогой тест озвучки и foley"
+      },
+      "media": {
+        "type": "video",
+        "path": "media/cases/case-12.mp4",
+        "thumbnail_path": "media/cases/case-12.jpg",
+        "source": "x_twitter_tweet",
+        "source_tweet_id": "2070288519684108353",
+        "source_url": "https://x.com/TomLikesRobots/status/2070288519684108353",
+        "download_url": "https://video.twimg.com/amplify_video/2070286932232294400/vid/avc1/1280x720/5AP7aNntuIP4Wqf1.mp4"
+      }
+    }
+  ]
+}

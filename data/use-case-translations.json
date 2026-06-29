@@ -1,0 +1,502 @@
+{
+  "zh-CN": {
+    "1": {
+      "takeaway": "构建音频优先的视频工作流：先用公开 Seed Audio prompt 生成六个角色对白和背景音效，再进入图像与 Seedance 视频生成。",
+      "notes": "原推公开了雨夜逃亡面包车场景的 Seed Audio prompt，并同时给出 Nano Banana Pro 图像 prompt 和 Seedance 2.0 视频 prompt。这是用生成音频指导后续视频节奏、对白和环境声的强证据。"
+    },
+    "2": {
+      "takeaway": "评估多片段故事视频中的 agentic soundscape 生成，并保留音效与画面动作仍可能不匹配的限制。",
+      "notes": "作者说明 Seedance 多片段故事里的音频一致性很难，于是测试把已有的一分钟低清视频交给 Claude Code 和 Codex，并配合 FAL key 生成音景。同作者后续补充说结果还可以，但部分 SFX 没有准确匹配画面，所以这个案例必须保留限制。"
+    },
+    "3": {
+      "takeaway": "采用官方三步流程：先生成 Seed-Audio，再创建关键视觉图，最后把音频和视觉一起作为 Seedance 2 reference-to-video 的参考。",
+      "notes": "原推明确说明，音频优先能给视频模型更强的音乐、旁白、环境声和时间节奏方向。同 thread 还说明 Seed-Audio 面向完整音频生成，不只是文本转语音。"
+    },
+    "4": {
+      "takeaway": "用脚本格式编写音频剧 prompt，同时指定环境声、角色声音、背景音乐和逐句表演方向。",
+      "notes": "原推包含一个两分钟幽闭家庭对峙音频剧 prompt，使用 INTENT、AESTHETIC、EXECUTION 结构，并明确灯管嗡鸣、冰箱振动、两个角色声线、情绪表达和完整台词，是最强的可复用 prompt 案例之一。"
+    },
+    "5": {
+      "takeaway": "测试场景级对白推理：Seed-Audio 能从紧凑情境 prompt 中生成台词、表达方式和角色声音。",
+      "notes": "作者给 Seed-Audio 的 prompt 是让博物馆导览员向困惑访客解释 crossing the Rubicon。模型生成了对白、语气和角色声音；作者随后用 Nano Banana 生成匹配图像，并用 Seedance 2 做成视频。"
+    },
+    "6": {
+      "takeaway": "从参考素材生成固定 MC 声音，将音频切分后作为 Seedance 2.0 lip-sync 视频参考。",
+      "notes": "原推描述了两步测试：先用素材 voice 作为参考，在 Seed Audio 里生成约一分钟 MC 音频；再把音频切分并交给 Seedance 2.0 视频化。作者也记录了实际限制：进入视频生成后声音会轻微变化，需要后期编辑。"
+    },
+    "7": {
+      "takeaway": "通过 Higgsfield MCP 在 Claude 内完成旁白、声音克隆和多语言配音，Seed Audio 1.0 是其中的音频能力之一。",
+      "notes": "Higgsfield 表示 Claude 可以通过其 MCP 集成生成音频，覆盖 voiceover、voice cloning 和 50 多种语言配音，由 Seed Audio 1.0 与 ElevenLabs v3 驱动。同作者回复给出了 MCP 访问链接，因此这是平台集成案例，不是单独 API 教程。"
+    },
+    "8": {
+      "takeaway": "基于实际使用评估日语稳定性、情绪跟随、参考音频精度，以及高声线机械感风险。",
+      "notes": "原推报告 Seed Audio 的日语输出比 Seedance 2.0 原生音频更稳定，能跟随台词情绪，参考音频精度较高且最长 30 秒。同时也记录限制：音频和图像不能同时 reference，高声线更容易出现机械感。"
+    },
+    "9": {
+      "takeaway": "把公开文字故事帖转成音频优先娱乐内容，并评估它能否成为可重复的内容引擎。",
+      "notes": "作者用 Seed Audio 1.0 旁白化了一条热门 AITA 风格帖子，并明确把结果设想为 viral content engine。同作者回复补充了 original post 链接，因此这是有真实文本来源的 text-to-narration 工作流。"
+    },
+    "10": {
+      "takeaway": "用参考图片做早期角色声音 casting，同时把 pitch 和 tone 稳定性视为未解决的生产风险。",
+      "notes": "作者测试 image-to-audio：只传入女性角色参考图，生成三条约十秒台词。结果两条声质方向接近，一条明显偏高，所以它支持早期角色声音探索，但不支持直接作为最终锁定角色声的生产流程。"
+    },
+    "11": {
+      "takeaway": "跟踪服务商入口：文本转自然语音、音景生成、预设声音、参考音频、图像引导音频和调参控制。",
+      "notes": "WaveSpeedAI 宣布 Seed Audio 1.0 已上线，并列出自然语音、预设声音、参考音频引导、图像引导音频，以及 speed、volume、pitch、format 控制。这是实现路径规划所需的强服务商证据。"
+    },
+    "12": {
+      "takeaway": "在投入下游视频生成前，把 Seed-Audio 作为声音表演和拟音的低成本测试层。",
+      "notes": "原推报告早期测试中，voice acting 和 foley 比 Seedance 2 原生音频更好，15 秒测试只需几美分。评论也补充了有价值限制：参考声音转换可能失败，生成音频与 Seedance lip-sync 的最佳工作流仍未解决。"
+    }
+  },
+  "zh-TW": {
+    "1": {
+      "takeaway": "建立音訊優先的影片工作流，讓多人對白和背景音效引導後續影片生成。",
+      "notes": "來源給出了 Seed Audio 加 Seedance 的具體流程，並包含六人對話和背景音效的提示詞式設定。"
+    },
+    "2": {
+      "takeaway": "測試 Seed-Audio 1.0 是否能減少多片段故事影片中的節奏和一致性問題。",
+      "notes": "來源描述了用已生成影片和 API key 為多片段故事流程製作 Seed Audio。"
+    },
+    "3": {
+      "takeaway": "組織三步工作流：先生成音訊，再建立關鍵視覺圖，最後把兩者作為 Seedance 參考。",
+      "notes": "來源給出了一條簡潔流程：音訊提供音樂、旁白、環境聲和時間節奏方向，再進入影片生成。"
+    },
+    "4": {
+      "takeaway": "評估 Seed-Audio 1.0 在多聲音、環境聲和背景音樂並存的短音訊劇場景中的表現。",
+      "notes": "來源報告了一個兩分鐘對白實驗，使用了作者式的 INTENT、AESTHETIC、EXECUTION 結構。"
+    },
+    "5": {
+      "takeaway": "測試場景級語言推理能力：由 Seed-Audio 生成對白、語氣和不同角色聲音。",
+      "notes": "來源描述了博物館導覽員和困惑遊客的提示詞，模型生成了自然對白和角色化表達。"
+    },
+    "6": {
+      "takeaway": "在進入後續影片生成前，評估適用於固定 MC 或系列旁白的參考聲音工作流。",
+      "notes": "來源描述了用參考素材生成約一分鐘 MC 聲音，再切分給 Seedance 影片使用；同時指出下游聲音漂移是實際限制。"
+    },
+    "7": {
+      "takeaway": "評估 Seed-Audio 1.0 在面向助手的創意工作區中，承擔旁白、聲音克隆和多語配音的價值。",
+      "notes": "這是樣本中互動最高的貼文，把 Seed Audio 放在 Claude MCP 工作流裡來展示。"
+    },
+    "8": {
+      "takeaway": "評估日語語音、情緒跟隨、參考音訊精度，以及高聲線可能出現機械感的風險。",
+      "notes": "來源報告日語輸出穩定、能跟隨情緒、參考音訊精度強，同時提醒較高聲線可能聽起來更機械。"
+    },
+    "9": {
+      "takeaway": "測試把文字貼文轉成音訊優先娛樂內容的社群故事旁白格式。",
+      "notes": "來源描述了給一則熱門 AITA 風格故事做旁白，並把它設想為可重複的內容引擎。"
+    },
+    "10": {
+      "takeaway": "把參考圖生成音訊用於早期角色聲音探索，而不是最終鎖定角色聲音。",
+      "notes": "來源報告角色圖片可以提示聲音方向，但若要做電影式固定角色聲音，仍需驗證音高和音色穩定性。"
+    },
+    "11": {
+      "takeaway": "追蹤服務商對自然語音、預設聲音、參考音訊、圖像引導音訊和調參控制的支援。",
+      "notes": "來源是服務商上線說明，列出了速度、音量、音高和格式控制，並說明 Seed Audio 已可用。"
+    },
+    "12": {
+      "takeaway": "在投入影片生成前，把 Seed-Audio 1.0 作為聲音表演和擬音的低成本迭代層來評估。",
+      "notes": "來源報告早期測試中，聲音表演和擬音比 Seedance 原生音訊更好，而且短實驗成本較低。"
+    }
+  },
+  "es": {
+    "1": {
+      "takeaway": "Cree un flujo de trabajo de vídeo centrado en el audio en el que el diálogo entre varios oradores y los efectos de fondo guíen la generación posterior del vídeo.",
+      "notes": "La fuente incluye un flujo de trabajo Seed Audio plus Seedance concreto y una configuración de estilo rápido para seis personas con efectos de fondo."
+    },
+    "2": {
+      "takeaway": "Pruebe si Seed-Audio 1.0 puede reducir los problemas de sincronización y coherencia en historias de vídeo de varios clips.",
+      "notes": "La fuente describe el uso de un video generado y un API key para producir Seed Audio para un flujo de trabajo de historias de múltiples clips."
+    },
+    "3": {
+      "takeaway": "Estructure un flujo de trabajo de tres pasos: genere audio, cree una imagen clave y luego use ambos como referencias Seedance.",
+      "notes": "La fuente ofrece un flujo de trabajo conciso donde el audio proporciona música, narración, ambiente y dirección de sincronización para el video."
+    },
+    "4": {
+      "takeaway": "Evalúe Seed-Audio 1.0 para escenas dramáticas de audio compactas con múltiples voces, ambiente y música de fondo.",
+      "notes": "La fuente informa sobre un experimento de diálogo de dos minutos que utiliza una estructura INTENT, AESTHETIC, EXECUTION de estilo autor."
+    },
+    "5": {
+      "takeaway": "Pruebe el razonamiento del lenguaje a nivel de escena donde Seed-Audio genera diálogo, entrega y voces distintas de los personajes.",
+      "notes": "La fuente describe una guía del museo y un mensaje confuso para el visitante donde el modelo produjo un diálogo natural y una entrega de personajes."
+    },
+    "6": {
+      "takeaway": "Evalúe los flujos de trabajo de voz de referencia para MC recurrentes o narraciones de series antes de la generación de video posterior.",
+      "notes": "La fuente describe cómo generar aproximadamente un minuto de voz MC a partir de material de referencia y luego dividirlo para video Seedance. También señala la deriva de la voz en sentido descendente como una advertencia práctica."
+    },
+    "7": {
+      "takeaway": "Evalúe Seed-Audio 1.0 como parte de un espacio de trabajo creativo nativo para asistentes para locución, clonación de voz y doblaje.",
+      "notes": "Fue la publicación con mayor interacción de la muestra y presenta Seed Audio dentro de un flujo de trabajo de Claude MCP."
+    },
+    "8": {
+      "takeaway": "Evaluar el habla japonesa, el seguimiento de emociones, la precisión del audio de referencia y el riesgo de sonido sintético de tono alto.",
+      "notes": "La fuente informa una producción japonesa estable, seguimiento de emociones, una fuerte precisión de audio de referencia y una advertencia de que las voces más altas pueden sonar más mecánicas."
+    },
+    "9": {
+      "takeaway": "Pruebe formatos de narración de historias sociales donde las publicaciones de texto se conviertan en entretenimiento con audio.",
+      "notes": "La fuente describe la narración de una historia popular al estilo AITA y la enmarca como una idea de motor de contenido repetible."
+    },
+    "10": {
+      "takeaway": "Evalúe el audio de la imagen de referencia como un casting inicial de voces de personajes, no como una producción final de bloqueo de voz.",
+      "notes": "La fuente informa que la imagen de un personaje puede sugerir una dirección de voz, mientras que la estabilidad del tono y el tono aún necesitan verificación para las voces de personajes fijos al estilo de una película."
+    },
+    "11": {
+      "takeaway": "Soporte del proveedor de seguimiento para voz natural, voces preestablecidas, audio de referencia, audio guiado por imágenes y controles de sintonización.",
+      "notes": "La fuente es una nota de lanzamiento del proveedor que enumera los controles de velocidad, volumen, tono y formato junto con la disponibilidad de Seed Audio."
+    },
+    "12": {
+      "takeaway": "Evalúe Seed-Audio 1.0 como una capa de iteración de bajo costo para actuación de voz y foley antes de comprometerse con la generación de video.",
+      "notes": "La fuente informa de las primeras pruebas en las que la actuación de voz y el foley se sintieron mejor que el audio Seedance nativo, con un bajo costo para experimentos cortos."
+    }
+  },
+  "pt": {
+    "1": {
+      "takeaway": "Crie um fluxo de trabalho de vídeo que prioriza o áudio, onde diálogos com vários alto-falantes e efeitos de fundo orientam a geração posterior de vídeo.",
+      "notes": "A fonte inclui um fluxo de trabalho Seed Audio mais Seedance concreto e uma configuração de estilo prompt para seis pessoas com efeitos de fundo."
+    },
+    "2": {
+      "takeaway": "Testar se o Seed-Audio 1.0 pode reduzir problemas de tempo e consistência em histórias de vídeo com vários clipes.",
+      "notes": "A fonte descreve o uso de um vídeo gerado e um API key para produzir Seed Audio para um fluxo de trabalho de história com vários clipes."
+    },
+    "3": {
+      "takeaway": "Estruture um fluxo de trabalho de três etapas: gere áudio, crie um visual principal e use ambos como referências Seedance.",
+      "notes": "A fonte fornece um fluxo de trabalho conciso onde o áudio fornece música, narração, ambiente e direção de tempo para o vídeo."
+    },
+    "4": {
+      "takeaway": "Avalie o Seed-Audio 1.0 para cenas compactas de drama de áudio com múltiplas vozes, ambiente e música de fundo.",
+      "notes": "A fonte relata um experimento de diálogo de dois minutos usando uma estrutura INTENT, AESTHETIC, EXECUTION estilo autor."
+    },
+    "5": {
+      "takeaway": "Teste o raciocínio de linguagem em nível de cena onde Seed-Audio gera diálogo, entrega e vozes de personagens distintas.",
+      "notes": "A fonte descreve um guia de museu e um alerta confuso ao visitante, onde o modelo produzia um diálogo natural e uma entrega de personagem."
+    },
+    "6": {
+      "takeaway": "Avalie fluxos de trabalho de voz de referência para MC recorrentes ou narração em série antes da geração de vídeo posterior.",
+      "notes": "A fonte descreve a geração de cerca de um minuto de voz MC a partir do material de referência e, em seguida, sua divisão para vídeo Seedance. Ela também observa a deriva de voz na etapa posterior como uma advertência prática."
+    },
+    "7": {
+      "takeaway": "Avalie o Seed-Audio 1.0 como parte de um espaço de trabalho criativo nativo do assistente para narração, clonagem de voz e dublagem.",
+      "notes": "Foi a publicação de maior engajamento da amostra e apresenta o Seed Audio dentro de um fluxo de trabalho do Claude MCP."
+    },
+    "8": {
+      "takeaway": "Avaliar a fala japonesa, o acompanhamento de emoções, a precisão do áudio de referência e o risco de som sintético de alta frequência.",
+      "notes": "A fonte relata saída japonesa estável, acompanhamento de emoções, forte precisão de áudio de referência e uma ressalva de que vozes mais altas podem soar mais mecânicas."
+    },
+    "9": {
+      "takeaway": "Teste formatos de narração de histórias sociais onde as postagens de texto se tornam entretenimento com foco no áudio.",
+      "notes": "A fonte descreve a narração de uma história popular no estilo AITA e a enquadra como uma ideia de mecanismo de conteúdo repetível."
+    },
+    "10": {
+      "takeaway": "Avaliar o áudio da imagem de referência como o elenco inicial da voz do personagem, e não como a produção final do bloqueio de voz.",
+      "notes": "A fonte relata que a imagem de um personagem pode sugerir uma direção de voz, enquanto a estabilidade do tom e do tom ainda precisa de verificação para vozes fixas de personagens no estilo de filme."
+    },
+    "11": {
+      "takeaway": "Rastreie o suporte do provedor para fala natural, vozes predefinidas, áudio de referência, áudio guiado por imagem e controles de ajuste.",
+      "notes": "A fonte é uma nota de lançamento do provedor que lista os controles de velocidade, volume, tom e formato junto com a disponibilidade do Seed Audio."
+    },
+    "12": {
+      "takeaway": "Avalie o Seed-Audio 1.0 como uma camada de iteração de baixo custo para dublagem e foley antes de se comprometer com a geração de vídeo.",
+      "notes": "A fonte relata os primeiros testes em que a dublagem e o foley foram melhores do que o áudio Seedance nativo, com baixo custo para experimentos curtos."
+    }
+  },
+  "ja": {
+    "1": {
+      "takeaway": "マルチスピーカーの対話と背景効果が後のビデオ生成をガイドする、オーディオファーストのビデオワークフローを構築します。",
+      "notes": "ソースには、具体的な Seed Audio と Seedance ワークフロー、および背景効果を備えた 6 人用のプロンプト スタイルのセットアップが含まれています。"
+    },
+    "2": {
+      "takeaway": "Seed-Audio 1.0 がマルチクリップ ビデオ ストーリーのタイミングと一貫性の問題を軽減できるかどうかをテストします。",
+      "notes": "このソースでは、生成されたビデオと API key を使用して、マルチクリップ ストーリー ワークフローの Seed Audio を生成することが説明されています。"
+    },
+    "3": {
+      "takeaway": "音声の生成、キービジュアルの作成、両方を Seedance リファレンスとして使用するという 3 ステップのワークフローを構築します。",
+      "notes": "このソースは、オーディオが音楽、ナレーション、アンビエンス、ビデオのタイミング指示を提供する簡潔なワークフロー パイプラインを提供します。"
+    },
+    "4": {
+      "takeaway": "複数の音声、アンビエンス、BGM を備えたコンパクトなオーディオ ドラマ シーン用の Seed-Audio 1.0 を評価します。",
+      "notes": "情報源は、作者スタイルの INTENT、AESTHETIC、EXECUTION 構造を使用した 2 分間の対話実験を報告しています。"
+    },
+    "5": {
+      "takeaway": "Seed-Audio が対話、伝達、および明確なキャラクターの声を生成するシーンレベルの言語推論をテストします。",
+      "notes": "情報源では、モデルが自然な対話とキャラクターの表現を生成した博物館のガイドと混乱した訪問者のプロンプトについて説明しています。"
+    },
+    "6": {
+      "takeaway": "ダウンストリームビデオ生成前に、反復的な MC またはシリーズのナレーションのリファレンス音声ワークフローを評価します。",
+      "notes": "ソースでは、リファレンス素材から約 1 分間の MC 音声を生成し、それを Seedance ビデオ用に分割することが説明されています。また、実際的な注意事項として、下流の音声ドリフトについても言及しています。"
+    },
+    "7": {
+      "takeaway": "ナレーション、音声クローン、およびダビングのためのアシスタントネイティブのクリエイティブワークスペースの一部として Seed-Audio 1.0 を評価します。",
+      "notes": "これはサンプル内で最もエンゲージメントの高い投稿で、Claude MCP ワークフローの中で Seed Audio を位置付けています。"
+    },
+    "8": {
+      "takeaway": "日本語の音声、感情の追従性、基準音声の精度、高音の合成音のリスクを評価します。",
+      "notes": "情報源は、安定した日本語出力、感情の追従性、強力なリファレンスオーディオの精度、および高い音声はより機械的に聞こえる可能性があるという警告を報告しています。"
+    },
+    "9": {
+      "takeaway": "テキスト投稿がオーディオファーストのエンターテイメントになるソーシャルストーリーのナレーション形式をテストします。",
+      "notes": "ソースでは、人気のある AITA スタイルのストーリーのナレーションについて説明し、それを反復可能なコンテンツ エンジンのアイデアとして組み立てています。"
+    },
+    "10": {
+      "takeaway": "最終的なボイスロック制作ではなく、初期のキャラクターボイスキャストとして参照イメージオーディオを評価します。",
+      "notes": "情報筋によると、キャラクターの画像は声の方向を示唆する可能性があるが、映画スタイルの固定キャラクターの声についてはピッチとトーンの安定性をまだ検証する必要があるという。"
+    },
+    "11": {
+      "takeaway": "自然な音声、プリセット音声、リファレンスオーディオ、画像ガイド付きオーディオ、およびチューニングコントロールに対するプロバイダーのサポートを追跡します。",
+      "notes": "ソースは、速度、音量、ピッチ、フォーマットのコントロールと Seed Audio の可用性をリストしたプロバイダーの起動ノートです。"
+    },
+    "12": {
+      "takeaway": "ビデオ生成に取り組む前に、音声演技とフォーリー用の低コストの反復レイヤーとして Seed-Audio 1.0 を評価します。",
+      "notes": "情報源によると、初期のテストでは音声の演技とフォーリーがネイティブの Seedance オーディオよりも優れていると感じられ、短期間の実験では低コストであったと報告されています。"
+    }
+  },
+  "ko": {
+    "1": {
+      "takeaway": "다중 화자 대화와 배경 효과가 이후 비디오 생성을 안내하는 오디오 우선 비디오 워크플로우를 구축합니다.",
+      "notes": "소스에는 구체적인 Seed Audio 및 Seedance 워크플로우와 배경 효과가 있는 6명을 위한 프롬프트 스타일 설정이 포함되어 있습니다."
+    },
+    "2": {
+      "takeaway": "Seed-Audio 1.0이 다중 클립 비디오 스토리의 타이밍 및 일관성 문제를 줄일 수 있는지 테스트합니다.",
+      "notes": "소스는 생성된 비디오와 API key을 사용하여 다중 클립 스토리 워크플로우를 위한 Seed Audio를 생성하는 방법을 설명합니다."
+    },
+    "3": {
+      "takeaway": "3단계 작업 흐름을 구성합니다. 즉, 오디오를 생성하고 주요 시각적 요소를 만든 다음 두 가지를 모두 Seedance 참조로 사용합니다.",
+      "notes": "소스는 오디오가 비디오의 음악, 내레이션, 분위기 및 타이밍 방향을 제공하는 간결한 작업 흐름 파이프라인을 제공합니다."
+    },
+    "4": {
+      "takeaway": "다양한 목소리, 분위기, 배경 음악이 포함된 컴팩트한 오디오 드라마 장면을 위해 Seed-Audio 1.0을 평가해 보세요.",
+      "notes": "소스는 작가 스타일의 INTENT, AESTHETIC, EXECUTION 구조를 사용한 2분 간의 대화 실험을 보고합니다."
+    },
+    "5": {
+      "takeaway": "Seed-Audio가 대화, 전달 및 고유한 캐릭터 음성을 생성하는 장면 수준 언어 추론을 테스트합니다.",
+      "notes": "소스는 모델이 자연스러운 대화와 캐릭터 전달을 생성하는 박물관 가이드와 혼란스러운 방문자 프롬프트를 설명합니다."
+    },
+    "6": {
+      "takeaway": "다운스트림 비디오 생성 전에 반복되는 MC 또는 시리즈 내레이션에 대한 참조 음성 워크플로를 평가합니다.",
+      "notes": "소스에서는 참조 자료에서 약 1분 분량의 MC 음성을 생성한 다음 이를 Seedance 비디오용으로 분할한다고 설명합니다. 또한 실질적인 주의 사항으로 다운스트림 음성 드리프트를 언급합니다."
+    },
+    "7": {
+      "takeaway": "음성 해설, 음성 복제 및 더빙을 위한 보조 네이티브 창의적 작업 공간의 일부로 Seed-Audio 1.0을 평가해 보세요.",
+      "notes": "샘플 중 참여도가 가장 높았던 게시물이며, Claude MCP 워크플로 안에서 Seed Audio를 제시합니다."
+    },
+    "8": {
+      "takeaway": "일본어 음성, 감정 추종, 참조 오디오 정밀도 및 고음 합성음 위험을 평가합니다.",
+      "notes": "소스는 안정적인 일본어 출력, 감정 추종, 강력한 기준 오디오 정확성, 목소리가 높을수록 기계적으로 들릴 수 있다는 경고를 보고합니다."
+    },
+    "9": {
+      "takeaway": "텍스트 게시물이 오디오 우선 엔터테인먼트가 되는 사회 이야기 내레이션 형식을 테스트합니다.",
+      "notes": "소스는 인기 있는 AITA 스타일 스토리를 설명하고 이를 반복 가능한 콘텐츠 엔진 아이디어로 구성합니다."
+    },
+    "10": {
+      "takeaway": "참조 이미지 오디오를 최종 음성 잠금 제작이 아닌 초기 캐릭터 음성 캐스팅으로 평가합니다.",
+      "notes": "소식통은 캐릭터 이미지가 음성 방향을 암시할 수 있지만 영화 스타일의 고정된 캐릭터 음성에 대해서는 피치와 톤 안정성에 대한 검증이 여전히 필요하다고 보고합니다."
+    },
+    "11": {
+      "takeaway": "자연스러운 음성, 사전 설정된 음성, 참조 오디오, 이미지 안내 오디오 및 튜닝 컨트롤에 대한 트랙 공급자 지원.",
+      "notes": "소스는 Seed Audio 가용성과 함께 속도, 볼륨, 피치 및 형식 제어를 나열하는 공급자 출시 노트입니다."
+    },
+    "12": {
+      "takeaway": "비디오 생성을 시작하기 전에 성우 및 폴리를 위한 저비용 반복 레이어로 Seed-Audio 1.0을 평가해 보세요.",
+      "notes": "소스는 짧은 실험을 위한 저렴한 비용으로 기본 Seedance 오디오보다 음성 연기 및 폴리가 더 좋다고 느꼈던 초기 테스트를 보고합니다."
+    }
+  },
+  "de": {
+    "1": {
+      "takeaway": "Erstellen Sie einen Audio-First-Video-Workflow, bei dem Dialoge mit mehreren Sprechern und Hintergrundeffekte die spätere Videoerstellung leiten.",
+      "notes": "Die Quelle umfasst einen konkreten Seed Audio plus Seedance-Workflow und ein Setup im Prompt-Stil für sechs Personen mit Hintergrundeffekten."
+    },
+    "2": {
+      "takeaway": "Testen Sie, ob Seed-Audio 1.0 Timing- und Konsistenzprobleme in Videogeschichten mit mehreren Clips reduzieren kann.",
+      "notes": "Die Quelle beschreibt die Verwendung eines generierten Videos und eines API key, um Seed Audio für einen Story-Workflow mit mehreren Clips zu erstellen."
+    },
+    "3": {
+      "takeaway": "Strukturieren Sie einen dreistufigen Workflow: Audio generieren, ein Key Visual erstellen und dann beides als Seedance-Referenzen verwenden.",
+      "notes": "Die Quelle bietet eine prägnante Workflow-Pipeline, in der Audio Musik, Erzählung, Atmosphäre und Timing-Anleitung für das Video liefert."
+    },
+    "4": {
+      "takeaway": "Evaluieren Sie Seed-Audio 1.0 für kompakte Hörspielszenen mit mehreren Stimmen, Ambiente und Hintergrundmusik.",
+      "notes": "Die Quelle berichtet von einem zweiminütigen Dialogexperiment mit einer INTENT-, AESTHETIC- und EXECUTION-Struktur im Autorenstil."
+    },
+    "5": {
+      "takeaway": "Testen Sie das sprachliche Denken auf Szenenebene, wobei Seed-Audio Dialoge, Darbietungen und unterschiedliche Charakterstimmen generiert.",
+      "notes": "Die Quelle beschreibt einen Museumsführer und eine verwirrte Besucheraufforderung, bei der das Modell natürliche Dialoge und Charakterdarstellungen hervorbrachte."
+    },
+    "6": {
+      "takeaway": "Evaluieren Sie Referenz-Sprachworkflows für wiederkehrende MC- oder Serienkommentare vor der nachgelagerten Videogenerierung.",
+      "notes": "Die Quelle beschreibt die Generierung von etwa einer Minute MC-Sprache aus Referenzmaterial und die anschließende Aufteilung für Seedance-Video. Als praktischer Vorbehalt wird auch die Downstream-Voice-Drift erwähnt."
+    },
+    "7": {
+      "takeaway": "Evaluieren Sie Seed-Audio 1.0 als Teil eines Assistenten-nativen kreativen Arbeitsbereichs für Voiceover, Stimmklonen und Synchronisation.",
+      "notes": "Dies war der Beitrag mit der höchsten Interaktion in der Stichprobe und positioniert Seed Audio innerhalb eines Claude MCP-Workflows."
+    },
+    "8": {
+      "takeaway": "Bewerten Sie die japanische Sprache, die Emotionsverfolgung, die Präzision des Referenzaudios und das Risiko hoher synthetischer Töne.",
+      "notes": "Die Quelle berichtet von stabiler japanischer Ausgabe, Emotionsverfolgung, hoher Referenz-Audio-Präzision und einem Vorbehalt, dass höhere Stimmen mechanischer klingen können."
+    },
+    "9": {
+      "takeaway": "Testen Sie Social-Story-Erzählformate, bei denen Textbeiträge zu Audio-First-Unterhaltung werden.",
+      "notes": "Die Quelle beschreibt das Erzählen einer beliebten Geschichte im AITA-Stil und formuliert sie als wiederholbare Content-Engine-Idee."
+    },
+    "10": {
+      "takeaway": "Bewerten Sie das Referenzbild-Audio als frühe Charakter-Stimmenbesetzung, nicht als endgültige Stimm-Lock-Produktion.",
+      "notes": "Die Quelle berichtet, dass ein Charakterbild eine Stimmrichtung vorschlagen kann, während Tonhöhe und Tonstabilität bei filmähnlichen festen Charakterstimmen noch überprüft werden müssen."
+    },
+    "11": {
+      "takeaway": "Unterstützung des Titelanbieters für natürliche Sprache, voreingestellte Stimmen, Referenzaudio, bildgeführtes Audio und Tuning-Steuerung.",
+      "notes": "Die Quelle ist eine Einführungsnotiz des Anbieters, in der Geschwindigkeits-, Lautstärke-, Tonhöhen- und Formatsteuerungen sowie die Verfügbarkeit von Seed Audio aufgeführt sind."
+    },
+    "12": {
+      "takeaway": "Evaluieren Sie Seed-Audio 1.0 als kostengünstige Iterationsschicht für Sprachausgabe und Geräusche, bevor Sie sich auf die Videogenerierung festlegen.",
+      "notes": "Die Quelle berichtet von frühen Tests, bei denen sich Sprachausgabe und Geräuschkulisse besser anfühlten als natives Seedance-Audio, wobei die Kosten für kurze Experimente gering waren."
+    }
+  },
+  "fr": {
+    "1": {
+      "takeaway": "Créez un flux de travail vidéo axé sur l'audio où les dialogues multi-haut-parleurs et les effets d'arrière-plan guident la génération vidéo ultérieure.",
+      "notes": "La source comprend un flux de travail concret Seed Audio plus Seedance et une configuration de style invite pour six personnes avec effets d'arrière-plan."
+    },
+    "2": {
+      "takeaway": "Testez si Seed-Audio 1.0 peut réduire les problèmes de timing et de cohérence dans les histoires vidéo multi-clips.",
+      "notes": "La source décrit l'utilisation d'une vidéo générée et d'un API key pour produire Seed Audio pour un flux de travail d'histoire multi-clips."
+    },
+    "3": {
+      "takeaway": "Structurez un flux de travail en trois étapes : générer de l'audio, créer un visuel clé, puis utiliser les deux comme références Seedance.",
+      "notes": "La source fournit un pipeline de flux de travail concis dans lequel l'audio fournit de la musique, une narration, une ambiance et une direction temporelle pour la vidéo."
+    },
+    "4": {
+      "takeaway": "Évaluez Seed-Audio 1.0 pour des scènes dramatiques audio compactes avec plusieurs voix, ambiances et musique de fond.",
+      "notes": "La source rapporte une expérience de dialogue de deux minutes utilisant une structure INTENT, AESTHETIC, EXECUTION de style auteur."
+    },
+    "5": {
+      "takeaway": "Testez le raisonnement linguistique au niveau de la scène où Seed-Audio génère un dialogue, une prestation et des voix de personnages distinctes.",
+      "notes": "La source décrit un guide de musée et une invite de visite confuse où le modèle a produit un dialogue naturel et une présentation des personnages."
+    },
+    "6": {
+      "takeaway": "Évaluez les flux de travail vocaux de référence pour la narration récurrente de MC ou de série avant la génération vidéo en aval.",
+      "notes": "La source décrit la génération d'environ une minute de voix MC à partir du matériel de référence, puis sa division pour la vidéo Seedance. Il note également la dérive de la voix en aval à titre de mise en garde pratique."
+    },
+    "7": {
+      "takeaway": "Évaluez Seed-Audio 1.0 dans le cadre d'un espace de travail créatif natif pour la voix off, le clonage de voix et le doublage.",
+      "notes": "C'était la publication la plus engageante de l'échantillon et elle situe Seed Audio dans un workflow Claude MCP."
+    },
+    "8": {
+      "takeaway": "Évaluer le discours japonais, le suivi des émotions, la précision audio de référence et le risque de son synthétique aigu.",
+      "notes": "La source fait état d'une sortie japonaise stable, d'un suivi des émotions, d'une forte précision audio de référence et d'une mise en garde selon laquelle les voix plus hautes peuvent paraître plus mécaniques."
+    },
+    "9": {
+      "takeaway": "Testez des formats de narration d’histoires sociales où les messages texte deviennent un divertissement avant tout audio.",
+      "notes": "La source décrit la narration d'une histoire populaire de style AITA et la présente comme une idée de moteur de contenu reproductible."
+    },
+    "10": {
+      "takeaway": "Évaluez l'audio de l'image de référence en tant que casting initial de voix de personnage, et non en tant que production finale de verrouillage vocal.",
+      "notes": "La source rapporte qu'une image de personnage peut suggérer une direction de voix, tandis que la stabilité de la hauteur et du ton doit encore être vérifiée pour les voix de personnages fixes de style film."
+    },
+    "11": {
+      "takeaway": "Prise en charge par le fournisseur de pistes pour la parole naturelle, les voix prédéfinies, l'audio de référence, l'audio guidé par l'image et les commandes de réglage.",
+      "notes": "La source est une note de lancement du fournisseur qui répertorie les commandes de vitesse, de volume, de hauteur et de format ainsi que la disponibilité de Seed Audio."
+    },
+    "12": {
+      "takeaway": "Évaluez Seed-Audio 1.0 en tant que couche d'itération à faible coût pour le doublage et le bruitage avant de vous engager dans la génération vidéo.",
+      "notes": "La source rapporte des premiers tests dans lesquels le doublage et le bruitage étaient meilleurs que l'audio Seedance natif, avec un faible coût pour de courtes expériences."
+    }
+  },
+  "tr": {
+    "1": {
+      "takeaway": "Çok hoparlörlü diyaloğun ve arka plan efektlerinin daha sonraki video oluşturmaya rehberlik ettiği, öncelikli ses video iş akışı oluşturun.",
+      "notes": "Kaynak, somut bir Seed Audio artı Seedance iş akışı ve arka plan efektlerine sahip altı kişi için istem tarzı bir kurulum içerir."
+    },
+    "2": {
+      "takeaway": "Seed-Audio 1.0'un çok klipli video hikayelerinde zamanlama ve tutarlılık sorunlarını azaltıp azaltamayacağını test edin.",
+      "notes": "Kaynak, çok klipli bir hikaye iş akışı için Seed Audio üretmek amacıyla oluşturulan bir videonun ve bir API key'in kullanımını açıklamaktadır."
+    },
+    "3": {
+      "takeaway": "Üç adımlı bir iş akışı yapılandırın: ses oluşturun, önemli bir görsel oluşturun ve ardından her ikisini de Seedance referansları olarak kullanın.",
+      "notes": "Kaynak, sesin müzik, anlatım, ambiyans ve video için zamanlama yönünü sağladığı kısa bir iş akışı hattı sağlar."
+    },
+    "4": {
+      "takeaway": "Çoklu ses, ambiyans ve arka plan müziği içeren kompakt sesli drama sahneleri için Seed-Audio 1.0'u değerlendirin.",
+      "notes": "Kaynak, auteur tarzı bir INTENT, AESTHETIC, EXECUTION yapısını kullanan iki dakikalık bir diyalog deneyini bildiriyor."
+    },
+    "5": {
+      "takeaway": "Seed-Audio'nun diyalog, sunum ve farklı karakter sesleri ürettiği sahne düzeyinde dil muhakemesini test edin.",
+      "notes": "Kaynak, modelin doğal diyalog ve karakter sunumu ürettiği bir müze rehberini ve kafası karışmış ziyaretçi yönlendirmesini anlatıyor."
+    },
+    "6": {
+      "takeaway": "Aşağı yönde video oluşturmadan önce yinelenen MC veya seri anlatım için referans ses iş akışlarını değerlendirin.",
+      "notes": "Kaynak, referans materyalden yaklaşık bir dakikalık MC sesinin üretildiğini ve ardından Seedance videosu için bölündüğünü anlatıyor. Ayrıca pratik bir uyarı olarak akış yönündeki ses kaymasını da not eder."
+    },
+    "7": {
+      "takeaway": "Seed-Audio 1.0'u seslendirme, ses klonlama ve dublaj için asistan-yerel yaratıcı çalışma alanının parçası olarak değerlendirin.",
+      "notes": "Bu, örneklemde en yüksek etkileşime sahip gönderiydi ve Seed Audio'yu Claude MCP iş akışı içinde konumlandırıyor."
+    },
+    "8": {
+      "takeaway": "Japonca konuşmayı, duygu takibini, referans ses hassasiyetini ve yüksek perdeli sentetik ses riskini değerlendirin.",
+      "notes": "Kaynak, istikrarlı Japonca çıktı, duygu takibi, güçlü referans ses hassasiyeti ve daha yüksek seslerin daha mekanik gelebileceğine dair bir uyarı bildiriyor."
+    },
+    "9": {
+      "takeaway": "Metin gönderilerinin önce ses eğlencesine dönüştüğü sosyal hikaye anlatım formatlarını test edin.",
+      "notes": "Kaynak, popüler bir AITA tarzı hikayenin anlatılmasını anlatıyor ve bunu tekrarlanabilir bir içerik motoru fikri olarak çerçeveliyor."
+    },
+    "10": {
+      "takeaway": "Referans görüntü sesini, son ses kilidi üretimi olarak değil, erken karakter seslendirmesi olarak değerlendirin.",
+      "notes": "Kaynak, bir karakter görüntüsünün bir ses yönü önerebileceğini ancak film tarzı sabit karakter sesleri için perde ve ton stabilitesinin hala doğrulanması gerektiğini bildiriyor."
+    },
+    "11": {
+      "takeaway": "Doğal konuşma, önceden ayarlanmış sesler, referans ses, görüntü kılavuzlu ses ve ayar kontrolleri için parça sağlayıcı desteği.",
+      "notes": "Kaynak, Seed Audio kullanılabilirliğinin yanı sıra hız, ses seviyesi, ses tonu ve format kontrollerini listeleyen bir sağlayıcı lansman notudur."
+    },
+    "12": {
+      "takeaway": "Seed-Audio 1.0'u video oluşturmaya başlamadan önce seslendirme ve foley için düşük maliyetli bir yineleme katmanı olarak değerlendirin.",
+      "notes": "Kaynak, kısa deneyler için düşük maliyetle, ses oyunculuğu ve foley'in yerel Seedance sesinden daha iyi hissettirdiği ilk testleri bildirdi."
+    }
+  },
+  "ru": {
+    "1": {
+      "takeaway": "Создайте рабочий процесс с приоритетом аудио, в котором диалоги нескольких говорящих и фоновые эффекты определяют последующую генерацию видео.",
+      "notes": "Исходный код включает в себя конкретный рабочий процесс Seed Audio плюс Seedance и настройку в стиле подсказок для шести человек с фоновыми эффектами."
+    },
+    "2": {
+      "takeaway": "Проверьте, может ли Seed-Audio 1.0 уменьшить проблемы с синхронизацией и согласованностью в видеосюжетах, состоящих из нескольких клипов.",
+      "notes": "В источнике описывается использование сгенерированного видео и API key для создания Seed Audio для рабочего процесса с несколькими клипами."
+    },
+    "3": {
+      "takeaway": "Структурируйте трехэтапный рабочий процесс: сгенерируйте аудио, создайте ключевой визуальный элемент, а затем используйте оба в качестве эталонов Seedance.",
+      "notes": "Источник дает краткий конвейер рабочего процесса, в котором звук обеспечивает музыку, повествование, атмосферу и направление синхронизации для видео."
+    },
+    "4": {
+      "takeaway": "Оцените Seed-Audio 1.0 для компактных звуковых драматических сцен с несколькими голосами, атмосферой и фоновой музыкой.",
+      "notes": "Источник сообщает о двухминутном диалоговом эксперименте с использованием структуры INTENT, AESTHETIC, EXECUTION в авторском стиле."
+    },
+    "5": {
+      "takeaway": "Протестируйте языковое мышление на уровне сцены, где Seed-Audio генерирует диалоги, подачу и отдельные голоса персонажей.",
+      "notes": "Источник описывает путеводитель по музею и запутанную подсказку для посетителей, в которой модель воспроизводит естественный диалог и передачу персонажей."
+    },
+    "6": {
+      "takeaway": "Оцените эталонные голосовые рабочие процессы для повторяющегося MC или повествования в сериале перед созданием последующего видео.",
+      "notes": "В источнике описывается создание примерно одной минуты голоса MC из справочного материала, а затем разделение его на видео Seedance. В качестве практического предостережения также отмечается дрейф голоса в нисходящем направлении."
+    },
+    "7": {
+      "takeaway": "Оцените Seed-Audio 1.0 как часть собственного творческого рабочего пространства помощника для озвучивания, клонирования голоса и дублирования.",
+      "notes": "Это была публикация с самым высоким уровнем вовлеченности в выборке; она показывает Seed Audio внутри рабочего процесса Claude MCP."
+    },
+    "8": {
+      "takeaway": "Оценить японскую речь, следование эмоциям, точность эталонного звука и риск высокого синтетического звука.",
+      "notes": "Источник сообщает о стабильном воспроизведении японского звука, следовании эмоциям, высокой точности эталонного звука и предостережении о том, что более высокие голоса могут звучать более механически."
+    },
+    "9": {
+      "takeaway": "Протестируйте форматы повествования социальных историй, в которых текстовые сообщения становятся аудиоразвлечением.",
+      "notes": "Источник описывает повествование популярной истории в стиле AITA и представляет ее как идею повторяемого механизма контента."
+    },
+    "10": {
+      "takeaway": "Оценивайте звук эталонного изображения как раннюю озвучку персонажа, а не как окончательную голосовую блокировку.",
+      "notes": "Источник сообщает, что изображение персонажа может указывать на направление голоса, в то время как стабильность высоты и тона все еще требует проверки для фиксированных голосов персонажей в стиле фильма."
+    },
+    "11": {
+      "takeaway": "Поддержка поставщика треков для естественной речи, предустановленных голосов, эталонного звука, звука с изображением и элементов управления настройкой.",
+      "notes": "Источником является примечание к запуску поставщика, в котором перечислены элементы управления скоростью, громкостью, высотой тона и форматом, а также доступность Seed Audio."
+    },
+    "12": {
+      "takeaway": "Оцените Seed-Audio 1.0 как недорогой итерационный слой для озвучки и фоли, прежде чем переходить к созданию видео.",
+      "notes": "Источник сообщает о первых тестах, в которых озвучка и фоли ощущались лучше, чем родной звук Seedance, при низкой стоимости для коротких экспериментов."
+    }
+  }
+}
