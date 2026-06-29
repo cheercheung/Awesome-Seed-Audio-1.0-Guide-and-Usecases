@@ -141,6 +141,7 @@ PRIVATE_PUBLICATION_PATTERNS = [
     "data/ingested_tweets.json",
     "github-repo-banner-output/",
 ]
+RAW_MEDIA_BASE = "https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main"
 
 REQUIRED_ENGLISH_SNIPPETS = [
     "Seed-Audio 1.0 Use Cases",
@@ -150,8 +151,9 @@ REQUIRED_ENGLISH_SNIPPETS = [
     "Preset voice docs",
     "Menu",
     "Case 11: Voice Acting, Foley, And Low-Cost Testing",
-    "<video controls",
+    "video preview",
     "Open video file",
+    RAW_MEDIA_BASE,
     "https://api.evolink.ai/v1/audios/generations",
     "doubao-seed-audio-1-0",
     "Acknowledge",
@@ -357,8 +359,9 @@ def main() -> int:
                             errors.append(f"case {case.get('number')} video thumbnail too small: {thumb_path}")
                         if thumb_path not in readme_text:
                             errors.append(f"README.md missing media thumbnail for case {case.get('number')}: {thumb_path}")
-                    if "<video controls" not in readme_text:
-                        errors.append("README.md missing inline video controls")
+                    raw_media_url = f"{RAW_MEDIA_BASE}/{media_path}"
+                    if raw_media_url not in readme_text:
+                        errors.append(f"README.md missing raw video link for case {case.get('number')}: {raw_media_url}")
                     if "Open video file" not in readme_text:
                         errors.append("README.md missing video fallback link")
         if len(source_urls) != len(set(source_urls)):

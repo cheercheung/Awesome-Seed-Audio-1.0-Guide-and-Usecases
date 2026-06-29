@@ -120,11 +120,9 @@ Repositorio complementario de API y skill: [doubao-seed-audio-api-skill](https:/
 
 La fuente incluye un flujo de trabajo Seed Audio plus Seedance concreto y una configuración de estilo rápido para seis personas con efectos de fondo.
 
-<video controls preload="metadata" poster="media/cases/case-01.jpg" width="760">
-  <source src="media/cases/case-01.mp4" type="video/mp4">
-</video>
+[![Caso 1 video preview](media/cases/case-01.jpg)](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-01.mp4)
 
-[Open video file](media/cases/case-01.mp4)
+[Open video file](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-01.mp4)
 
 Tipo: Tutorial | Fecha: 2026-06-26
 
@@ -135,11 +133,9 @@ Tipo: Tutorial | Fecha: 2026-06-26
 
 La fuente describe el uso de un video generado y un API key para producir Seed Audio para un flujo de trabajo de historias de múltiples clips.
 
-<video controls preload="metadata" poster="media/cases/case-02.jpg" width="760">
-  <source src="media/cases/case-02.mp4" type="video/mp4">
-</video>
+[![Caso 2 video preview](media/cases/case-02.jpg)](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-02.mp4)
 
-[Open video file](media/cases/case-02.mp4)
+[Open video file](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-02.mp4)
 
 Tipo: Evaluación | Fecha: 2026-06-25
 
@@ -150,11 +146,9 @@ Tipo: Evaluación | Fecha: 2026-06-25
 
 La fuente ofrece un flujo de trabajo conciso donde el audio proporciona música, narración, ambiente y dirección de sincronización para el video.
 
-<video controls preload="metadata" poster="media/cases/case-03.jpg" width="760">
-  <source src="media/cases/case-03.mp4" type="video/mp4">
-</video>
+[![Caso 3 video preview](media/cases/case-03.jpg)](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-03.mp4)
 
-[Open video file](media/cases/case-03.mp4)
+[Open video file](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-03.mp4)
 
 Tipo: Tutorial | Fecha: 2026-06-27
 
@@ -165,11 +159,9 @@ Tipo: Tutorial | Fecha: 2026-06-27
 
 La fuente informa sobre un experimento de diálogo de dos minutos que utiliza una estructura INTENT, AESTHETIC, EXECUTION de estilo autor.
 
-<video controls preload="metadata" poster="media/cases/case-04.jpg" width="760">
-  <source src="media/cases/case-04.mp4" type="video/mp4">
-</video>
+[![Caso 4 video preview](media/cases/case-04.jpg)](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-04.mp4)
 
-[Open video file](media/cases/case-04.mp4)
+[Open video file](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-04.mp4)
 
 Tipo: Tutorial | Fecha: 2026-06-28
 
@@ -180,11 +172,9 @@ Tipo: Tutorial | Fecha: 2026-06-28
 
 La fuente describe una guía del museo y un mensaje confuso para el visitante donde el modelo produjo un diálogo natural y una entrega de personajes.
 
-<video controls preload="metadata" poster="media/cases/case-05.jpg" width="760">
-  <source src="media/cases/case-05.mp4" type="video/mp4">
-</video>
+[![Caso 5 video preview](media/cases/case-05.jpg)](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-05.mp4)
 
-[Open video file](media/cases/case-05.mp4)
+[Open video file](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-05.mp4)
 
 Tipo: Demo | Fecha: 2026-06-27
 
@@ -195,11 +185,9 @@ Tipo: Demo | Fecha: 2026-06-27
 
 La fuente describe cómo generar aproximadamente un minuto de voz MC a partir de material de referencia y luego dividirlo para video Seedance. También señala la deriva de la voz en sentido descendente como una advertencia práctica.
 
-<video controls preload="metadata" poster="media/cases/case-06.jpg" width="760">
-  <source src="media/cases/case-06.mp4" type="video/mp4">
-</video>
+[![Caso 6 video preview](media/cases/case-06.jpg)](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-06.mp4)
 
-[Open video file](media/cases/case-06.mp4)
+[Open video file](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-06.mp4)
 
 Tipo: Tutorial | Fecha: 2026-06-27
 
@@ -210,11 +198,9 @@ Tipo: Tutorial | Fecha: 2026-06-27
 
 Fue la publicación con mayor interacción de la muestra y presenta Seed Audio dentro de un flujo de trabajo de Claude MCP.
 
-<video controls preload="metadata" poster="media/cases/case-07.jpg" width="760">
-  <source src="media/cases/case-07.mp4" type="video/mp4">
-</video>
+[![Caso 7 video preview](media/cases/case-07.jpg)](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-07.mp4)
 
-[Open video file](media/cases/case-07.mp4)
+[Open video file](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-07.mp4)
 
 Tipo: Integración | Fecha: 2026-06-27
 
@@ -225,11 +211,9 @@ Tipo: Integración | Fecha: 2026-06-27
 
 La fuente informa una producción japonesa estable, seguimiento de emociones, una fuerte precisión de audio de referencia y una advertencia de que las voces más altas pueden sonar más mecánicas.
 
-<video controls preload="metadata" poster="media/cases/case-08.jpg" width="760">
-  <source src="media/cases/case-08.mp4" type="video/mp4">
-</video>
+[![Caso 8 video preview](media/cases/case-08.jpg)](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-08.mp4)
 
-[Open video file](media/cases/case-08.mp4)
+[Open video file](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-08.mp4)
 
 Tipo: Evaluación | Fecha: 2026-06-26
 
@@ -240,11 +224,9 @@ Tipo: Evaluación | Fecha: 2026-06-26
 
 La fuente describe la narración de una historia popular al estilo AITA y la enmarca como una idea de motor de contenido repetible.
 
-<video controls preload="metadata" poster="media/cases/case-09.jpg" width="760">
-  <source src="media/cases/case-09.mp4" type="video/mp4">
-</video>
+[![Caso 9 video preview](media/cases/case-09.jpg)](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-09.mp4)
 
-[Open video file](media/cases/case-09.mp4)
+[Open video file](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-09.mp4)
 
 Tipo: Demo | Fecha: 2026-06-29
 
@@ -266,11 +248,9 @@ Tipo: Evaluación | Fecha: 2026-06-26
 
 La fuente informa de las primeras pruebas en las que la actuación de voz y el foley se sintieron mejor que el audio Seedance nativo, con un bajo costo para experimentos cortos.
 
-<video controls preload="metadata" poster="media/cases/case-11.jpg" width="760">
-  <source src="media/cases/case-11.mp4" type="video/mp4">
-</video>
+[![Caso 11 video preview](media/cases/case-11.jpg)](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-11.mp4)
 
-[Open video file](media/cases/case-11.mp4)
+[Open video file](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-11.mp4)
 
 Tipo: Evaluación | Fecha: 2026-06-25
 

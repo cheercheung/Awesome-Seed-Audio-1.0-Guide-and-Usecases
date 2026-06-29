@@ -123,11 +123,9 @@ curl --request POST \
 - 实际流程：先生成完整多人对白和环境声底，再生成匹配人物轮廓与氛围的关键视觉图，最后把音频和视觉一起交给 Seedance 做最终运动画面。
 - 注意事项：这个来源能证明工作流和 prompt 结构有学习价值，但不能保证长场景里每个角色都永久稳定。正式生产前要专门测试说话人区分、节奏和转场。
 
-<video controls preload="metadata" poster="media/cases/case-01.jpg" width="760">
-  <source src="media/cases/case-01.mp4" type="video/mp4">
-</video>
+[![案例 1 video preview](media/cases/case-01.jpg)](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-01.mp4)
 
-[打开视频文件](media/cases/case-01.mp4)
+[打开视频文件](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-01.mp4)
 
 类型: 教程 | 日期: 2026-06-26
 
@@ -141,11 +139,9 @@ curl --request POST \
 - 实际流程：先让 agent 读取视频情境并产出逐镜头音频计划，再生成背景声、环境声或音效，最后按每个片段核对声音是否跟画面动作对齐。
 - 注意事项：同作者后续说明部分 SFX 仍然没有准确匹配画面动作，所以它是评估案例，不是完整教程。它的价值在于教你如何测试，以及提醒多片段视频仍有错配风险。
 
-<video controls preload="metadata" poster="media/cases/case-02.jpg" width="760">
-  <source src="media/cases/case-02.mp4" type="video/mp4">
-</video>
+[![案例 2 video preview](media/cases/case-02.jpg)](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-02.mp4)
 
-[打开视频文件](media/cases/case-02.mp4)
+[打开视频文件](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-02.mp4)
 
 类型: 评估 | 日期: 2026-06-25
 
@@ -159,11 +155,9 @@ curl --request POST \
 - 实际流程：先确定音频里的情绪弧线、旁白节奏和环境声，再创建匹配场景的图片，最后把两者共同作为参考，让视频模型同时获得时间和视觉方向。
 - 注意事项：这是官方式工作流模板，不是独立 benchmark。它适合作为起点，但仍需要单独检查 lip-sync、镜头节奏，以及视频是否真的跟随音频 cue。
 
-<video controls preload="metadata" poster="media/cases/case-03.jpg" width="760">
-  <source src="media/cases/case-03.mp4" type="video/mp4">
-</video>
+[![案例 3 video preview](media/cases/case-03.jpg)](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-03.mp4)
 
-[打开视频文件](media/cases/case-03.mp4)
+[打开视频文件](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-03.mp4)
 
 类型: 教程 | 日期: 2026-06-27
 
@@ -177,11 +171,9 @@ curl --request POST \
 - 实际流程：把场景写成短剧本，控制每句表演指令不要太长，同时保留持续背景音，让模型既能跟随情绪，也能保持场景质感。
 - 注意事项：作者认为结果较好地跟随了 prompt，但长音频仍要检查一致性。生产内容最好把长场景拆成多个 beat，避免角色情绪或背景音乐中途漂移。
 
-<video controls preload="metadata" poster="media/cases/case-04.jpg" width="760">
-  <source src="media/cases/case-04.mp4" type="video/mp4">
-</video>
+[![案例 4 video preview](media/cases/case-04.jpg)](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-04.mp4)
 
-[打开视频文件](media/cases/case-04.mp4)
+[打开视频文件](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-04.mp4)
 
 类型: 教程 | 日期: 2026-06-28
 
@@ -195,11 +187,9 @@ curl --request POST \
 - 实际流程：输入角色身份、解释对象、听众困惑点和语气要求；生成后重点检查讲话是否自然，以及解释是否准确。
 - 注意事项：这是演示案例，因为来源证明了场景级语言推理和自然表达，但没有提供完整生产流程。用于教育内容时必须复核事实正确性。
 
-<video controls preload="metadata" poster="media/cases/case-05.jpg" width="760">
-  <source src="media/cases/case-05.mp4" type="video/mp4">
-</video>
+[![案例 5 video preview](media/cases/case-05.jpg)](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-05.mp4)
 
-[打开视频文件](media/cases/case-05.mp4)
+[打开视频文件](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-05.mp4)
 
 类型: 演示 | 日期: 2026-06-27
 
@@ -213,11 +203,9 @@ curl --request POST \
 - 实际流程：先生成一分钟左右的主持声音，挑选发音稳定的片段，按视频台词切分，再作为视频生成或 lip-sync 的声音参考。
 - 注意事项：作者明确记录了下游视频生成后声音会轻微变化，因此这个案例是工作流教程，不是声音身份稳定性的保证。最终片段仍需要后期校正。
 
-<video controls preload="metadata" poster="media/cases/case-06.jpg" width="760">
-  <source src="media/cases/case-06.mp4" type="video/mp4">
-</video>
+[![案例 6 video preview](media/cases/case-06.jpg)](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-06.mp4)
 
-[打开视频文件](media/cases/case-06.mp4)
+[打开视频文件](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-06.mp4)
 
 类型: 教程 | 日期: 2026-06-27
 
@@ -231,11 +219,9 @@ curl --request POST \
 - 实际流程：从短旁白或配音请求开始，在 Claude 内调用 MCP 生成，再检查输出语言、声音身份和媒体工作流是否满足目标。
 - 注意事项：这是集成案例，不是质量评测。来源证明了可访问路径和产品入口，但不能独立证明 50 多种语言的配音质量都可靠。
 
-<video controls preload="metadata" poster="media/cases/case-07.jpg" width="760">
-  <source src="media/cases/case-07.mp4" type="video/mp4">
-</video>
+[![案例 7 video preview](media/cases/case-07.jpg)](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-07.mp4)
 
-[打开视频文件](media/cases/case-07.mp4)
+[打开视频文件](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-07.mp4)
 
 类型: 集成 | 日期: 2026-06-27
 
@@ -249,11 +235,9 @@ curl --request POST \
 - 实际流程：分别用普通声线和高声线跑短片段，跟参考音频做对比；如果你还需要图像引导，要单独测，因为来源指出音频和图像 reference 不能合用。
 - 注意事项：这个案例的核心不是宣称 Seed-Audio 永远更好，而是把表现好和需要谨慎的地方都列出来，所以标注为评估。
 
-<video controls preload="metadata" poster="media/cases/case-08.jpg" width="760">
-  <source src="media/cases/case-08.mp4" type="video/mp4">
-</video>
+[![案例 8 video preview](media/cases/case-08.jpg)](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-08.mp4)
 
-[打开视频文件](media/cases/case-08.mp4)
+[打开视频文件](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-08.mp4)
 
 类型: 评估 | 日期: 2026-06-26
 
@@ -267,11 +251,9 @@ curl --request POST \
 - 实际流程：选择有公开来源的文字故事，拆成旁白段落，生成声音，再搭配简单视觉、字幕或视频素材，最后观察这种格式能否重复生产。
 - 注意事项：这是演示案例，不等于版权或增长已经成立。正式使用时要处理授权和来源标注，也要用真实发布数据验证它是否能成为内容渠道。
 
-<video controls preload="metadata" poster="media/cases/case-09.jpg" width="760">
-  <source src="media/cases/case-09.mp4" type="video/mp4">
-</video>
+[![案例 9 video preview](media/cases/case-09.jpg)](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-09.mp4)
 
-[打开视频文件](media/cases/case-09.mp4)
+[打开视频文件](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-09.mp4)
 
 类型: 演示 | 日期: 2026-06-29
 
@@ -299,11 +281,9 @@ curl --request POST \
 - 实际流程：先生成 10 到 15 秒短音频，对比它和视频模型原生音频的表现；只有当声音方向足够强时，再进入下游视频生成。
 - 注意事项：评论里补充了 reference voice conversion 可能失败，以及生成音频如何最好地进入 Seedance lip-sync 仍未解决。因此它是评估案例，不是完整最终管线。
 
-<video controls preload="metadata" poster="media/cases/case-11.jpg" width="760">
-  <source src="media/cases/case-11.mp4" type="video/mp4">
-</video>
+[![案例 11 video preview](media/cases/case-11.jpg)](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-11.mp4)
 
-[打开视频文件](media/cases/case-11.mp4)
+[打开视频文件](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-11.mp4)
 
 类型: 评估 | 日期: 2026-06-25
 

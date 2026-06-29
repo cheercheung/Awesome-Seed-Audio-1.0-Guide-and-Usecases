@@ -120,11 +120,9 @@ curl --request POST \
 
 來源給出了 Seed Audio 加 Seedance 的具體流程，並包含六人對話和背景音效的提示詞式設定。
 
-<video controls preload="metadata" poster="media/cases/case-01.jpg" width="760">
-  <source src="media/cases/case-01.mp4" type="video/mp4">
-</video>
+[![案例 1 video preview](media/cases/case-01.jpg)](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-01.mp4)
 
-[打開影片檔案](media/cases/case-01.mp4)
+[打開影片檔案](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-01.mp4)
 
 類型: 教學 | 日期: 2026-06-26
 
@@ -135,11 +133,9 @@ curl --request POST \
 
 來源描述了用已生成影片和 API key 為多片段故事流程製作 Seed Audio。
 
-<video controls preload="metadata" poster="media/cases/case-02.jpg" width="760">
-  <source src="media/cases/case-02.mp4" type="video/mp4">
-</video>
+[![案例 2 video preview](media/cases/case-02.jpg)](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-02.mp4)
 
-[打開影片檔案](media/cases/case-02.mp4)
+[打開影片檔案](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-02.mp4)
 
 類型: 評估 | 日期: 2026-06-25
 
@@ -150,11 +146,9 @@ curl --request POST \
 
 來源給出了一條簡潔流程：音訊提供音樂、旁白、環境聲和時間節奏方向，再進入影片生成。
 
-<video controls preload="metadata" poster="media/cases/case-03.jpg" width="760">
-  <source src="media/cases/case-03.mp4" type="video/mp4">
-</video>
+[![案例 3 video preview](media/cases/case-03.jpg)](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-03.mp4)
 
-[打開影片檔案](media/cases/case-03.mp4)
+[打開影片檔案](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-03.mp4)
 
 類型: 教學 | 日期: 2026-06-27
 
@@ -165,11 +159,9 @@ curl --request POST \
 
 來源報告了一個兩分鐘對白實驗，使用了作者式的 INTENT、AESTHETIC、EXECUTION 結構。
 
-<video controls preload="metadata" poster="media/cases/case-04.jpg" width="760">
-  <source src="media/cases/case-04.mp4" type="video/mp4">
-</video>
+[![案例 4 video preview](media/cases/case-04.jpg)](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-04.mp4)
 
-[打開影片檔案](media/cases/case-04.mp4)
+[打開影片檔案](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-04.mp4)
 
 類型: 教學 | 日期: 2026-06-28
 
@@ -180,11 +172,9 @@ curl --request POST \
 
 來源描述了博物館導覽員和困惑遊客的提示詞，模型生成了自然對白和角色化表達。
 
-<video controls preload="metadata" poster="media/cases/case-05.jpg" width="760">
-  <source src="media/cases/case-05.mp4" type="video/mp4">
-</video>
+[![案例 5 video preview](media/cases/case-05.jpg)](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-05.mp4)
 
-[打開影片檔案](media/cases/case-05.mp4)
+[打開影片檔案](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-05.mp4)
 
 類型: 演示 | 日期: 2026-06-27
 
@@ -195,11 +185,9 @@ curl --request POST \
 
 來源描述了用參考素材生成約一分鐘 MC 聲音，再切分給 Seedance 影片使用；同時指出下游聲音漂移是實際限制。
 
-<video controls preload="metadata" poster="media/cases/case-06.jpg" width="760">
-  <source src="media/cases/case-06.mp4" type="video/mp4">
-</video>
+[![案例 6 video preview](media/cases/case-06.jpg)](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-06.mp4)
 
-[打開影片檔案](media/cases/case-06.mp4)
+[打開影片檔案](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-06.mp4)
 
 類型: 教學 | 日期: 2026-06-27
 
@@ -210,11 +198,9 @@ curl --request POST \
 
 這是樣本中互動最高的貼文，把 Seed Audio 放在 Claude MCP 工作流裡來展示。
 
-<video controls preload="metadata" poster="media/cases/case-07.jpg" width="760">
-  <source src="media/cases/case-07.mp4" type="video/mp4">
-</video>
+[![案例 7 video preview](media/cases/case-07.jpg)](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-07.mp4)
 
-[打開影片檔案](media/cases/case-07.mp4)
+[打開影片檔案](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-07.mp4)
 
 類型: 整合 | 日期: 2026-06-27
 
@@ -225,11 +211,9 @@ curl --request POST \
 
 來源報告日語輸出穩定、能跟隨情緒、參考音訊精度強，同時提醒較高聲線可能聽起來更機械。
 
-<video controls preload="metadata" poster="media/cases/case-08.jpg" width="760">
-  <source src="media/cases/case-08.mp4" type="video/mp4">
-</video>
+[![案例 8 video preview](media/cases/case-08.jpg)](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-08.mp4)
 
-[打開影片檔案](media/cases/case-08.mp4)
+[打開影片檔案](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-08.mp4)
 
 類型: 評估 | 日期: 2026-06-26
 
@@ -240,11 +224,9 @@ curl --request POST \
 
 來源描述了給一則熱門 AITA 風格故事做旁白，並把它設想為可重複的內容引擎。
 
-<video controls preload="metadata" poster="media/cases/case-09.jpg" width="760">
-  <source src="media/cases/case-09.mp4" type="video/mp4">
-</video>
+[![案例 9 video preview](media/cases/case-09.jpg)](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-09.mp4)
 
-[打開影片檔案](media/cases/case-09.mp4)
+[打開影片檔案](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-09.mp4)
 
 類型: 演示 | 日期: 2026-06-29
 
@@ -266,11 +248,9 @@ curl --request POST \
 
 來源報告早期測試中，聲音表演和擬音比 Seedance 原生音訊更好，而且短實驗成本較低。
 
-<video controls preload="metadata" poster="media/cases/case-11.jpg" width="760">
-  <source src="media/cases/case-11.mp4" type="video/mp4">
-</video>
+[![案例 11 video preview](media/cases/case-11.jpg)](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-11.mp4)
 
-[打開影片檔案](media/cases/case-11.mp4)
+[打開影片檔案](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-11.mp4)
 
 類型: 評估 | 日期: 2026-06-25
 

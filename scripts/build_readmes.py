@@ -16,6 +16,7 @@ VOICE_DATA = json.loads((ROOT / "data" / "voice-list.json").read_text(encoding="
 VOICE_SOURCES = VOICE_DATA["voices"]
 VOICE_DOCS_URL = VOICE_DATA["metadata"]["source_doc_url"]
 CAMPAIGN = "awesome-seed-audio-1.0-usecases"
+RAW_MEDIA_BASE = "https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main"
 
 
 LOCALES = {
@@ -715,13 +716,12 @@ def build_case_details(locale: str) -> list[str]:
         )
         media = case.get("media") or {}
         if media.get("type") == "video" and media.get("thumbnail_path") and media.get("path"):
+            video_url = f"{RAW_MEDIA_BASE}/{media['path']}"
             lines.extend(
                 [
-                    f"<video controls preload=\"metadata\" poster=\"{media['thumbnail_path']}\" width=\"760\">",
-                    f"  <source src=\"{media['path']}\" type=\"video/mp4\">",
-                    f"</video>",
+                    f"[![{tr(locale, 'case')} {case['number']} video preview]({media['thumbnail_path']})]({video_url})",
                     "",
-                    f"[{tr(locale, 'open_video')}]({media['path']})",
+                    f"[{tr(locale, 'open_video')}]({video_url})",
                     "",
                 ]
             )

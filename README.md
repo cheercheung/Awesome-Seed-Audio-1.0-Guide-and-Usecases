@@ -123,11 +123,9 @@ Read the companion API and skill repo: [doubao-seed-audio-api-skill](https://git
 - Practical workflow: first generate the full multi-speaker audio bed, then create a key visual with matching character silhouettes and mood, then feed audio plus visual context into Seedance for final motion.
 - Watch-outs: The evidence supports workflow design and prompt structure; it does not prove perfect speaker separation in every longer scene, so test character identity and timing before using it for production dialogue.
 
-<video controls preload="metadata" poster="media/cases/case-01.jpg" width="760">
-  <source src="media/cases/case-01.mp4" type="video/mp4">
-</video>
+[![Case 1 video preview](media/cases/case-01.jpg)](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-01.mp4)
 
-[Open video file](media/cases/case-01.mp4)
+[Open video file](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-01.mp4)
 
 Type: Tutorial | Date: 2026-06-26
 
@@ -141,11 +139,9 @@ Type: Tutorial | Date: 2026-06-26
 - Practical workflow: give the agent the video context, ask it to produce a scene-by-scene audio plan, generate the soundtrack or effects pass, then compare the result against each clip rather than judging the full minute as one block.
 - Watch-outs: The same source reports that some effects still miss the exact on-screen action. This is why the case is labeled Evaluation, not Tutorial: it teaches a useful test method and preserves the mismatch risk.
 
-<video controls preload="metadata" poster="media/cases/case-02.jpg" width="760">
-  <source src="media/cases/case-02.mp4" type="video/mp4">
-</video>
+[![Case 2 video preview](media/cases/case-02.jpg)](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-02.mp4)
 
-[Open video file](media/cases/case-02.mp4)
+[Open video file](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-02.mp4)
 
 Type: Evaluation | Date: 2026-06-25
 
@@ -159,11 +155,9 @@ Type: Evaluation | Date: 2026-06-25
 - Practical workflow: decide the emotional rhythm in the audio prompt first, create or choose an image that matches the scene, then use both references so the video model has timing and visual direction at the same time.
 - Watch-outs: This is an official workflow pattern rather than an independent benchmark. It is useful as a starting recipe, but you still need to test lip-sync, cut timing, and whether the generated video follows the audio cues closely enough.
 
-<video controls preload="metadata" poster="media/cases/case-03.jpg" width="760">
-  <source src="media/cases/case-03.mp4" type="video/mp4">
-</video>
+[![Case 3 video preview](media/cases/case-03.jpg)](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-03.mp4)
 
-[Open video file](media/cases/case-03.mp4)
+[Open video file](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-03.mp4)
 
 Type: Tutorial | Date: 2026-06-27
 
@@ -177,11 +171,9 @@ Type: Tutorial | Date: 2026-06-27
 - Practical workflow: draft the scene as a short script, limit each line direction to a few words, include persistent background sound, and listen for whether the model follows both the emotion and the pacing.
 - Watch-outs: The source says the result followed the prompt closely, but long-form consistency still needs review. For production, split long scenes into smaller beats if character emotion or background music drifts.
 
-<video controls preload="metadata" poster="media/cases/case-04.jpg" width="760">
-  <source src="media/cases/case-04.mp4" type="video/mp4">
-</video>
+[![Case 4 video preview](media/cases/case-04.jpg)](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-04.mp4)
 
-[Open video file](media/cases/case-04.mp4)
+[Open video file](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-04.mp4)
 
 Type: Tutorial | Date: 2026-06-28
 
@@ -195,11 +187,9 @@ Type: Tutorial | Date: 2026-06-28
 - Practical workflow: give the model the roles, the concept to explain, and the conversational relationship; then evaluate whether the generated speech sounds natural and whether the explanation remains correct.
 - Watch-outs: This is a Demo because the source demonstrates scene-level language reasoning and natural delivery, but it does not provide a repeatable benchmark. Check factual accuracy if you use the pattern for education.
 
-<video controls preload="metadata" poster="media/cases/case-05.jpg" width="760">
-  <source src="media/cases/case-05.mp4" type="video/mp4">
-</video>
+[![Case 5 video preview](media/cases/case-05.jpg)](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-05.mp4)
 
-[Open video file](media/cases/case-05.mp4)
+[Open video file](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-05.mp4)
 
 Type: Demo | Date: 2026-06-27
 
@@ -213,11 +203,9 @@ Type: Demo | Date: 2026-06-27
 - Practical workflow: generate a longer clean voice sample, cut it into short usable segments, use those segments as references for video, then edit any drift after the video pass.
 - Watch-outs: The author explicitly says the voice changes slightly when Seedance turns it into video. That caveat is central: this is a Tutorial for workflow construction, not a guarantee of stable voice identity.
 
-<video controls preload="metadata" poster="media/cases/case-06.jpg" width="760">
-  <source src="media/cases/case-06.mp4" type="video/mp4">
-</video>
+[![Case 6 video preview](media/cases/case-06.jpg)](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-06.mp4)
 
-[Open video file](media/cases/case-06.mp4)
+[Open video file](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-06.mp4)
 
 Type: Tutorial | Date: 2026-06-27
 
@@ -231,11 +219,9 @@ Type: Tutorial | Date: 2026-06-27
 - Practical workflow: start with a short voiceover or dubbing request inside Claude, use the MCP route for generation, then inspect whether the output fits the target language, voice identity, and media workflow.
 - Watch-outs: This is Integration, not a quality evaluation. The post proves availability and workflow surface, but it does not independently verify dubbing quality across all 50+ languages.
 
-<video controls preload="metadata" poster="media/cases/case-07.jpg" width="760">
-  <source src="media/cases/case-07.mp4" type="video/mp4">
-</video>
+[![Case 7 video preview](media/cases/case-07.jpg)](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-07.mp4)
 
-[Open video file](media/cases/case-07.mp4)
+[Open video file](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-07.mp4)
 
 Type: Integration | Date: 2026-06-27
 
@@ -249,11 +235,9 @@ Type: Integration | Date: 2026-06-27
 - Practical workflow: run short clips across normal and high-pitch voices, compare outputs against the reference audio, and separately test image-guided workflows because this source says audio and image references cannot be combined.
 - Watch-outs: This is an Evaluation because its main value is the limitation map. The strongest lesson is not “Seed-Audio is always better,” but where it behaves well and where it still needs testing.
 
-<video controls preload="metadata" poster="media/cases/case-08.jpg" width="760">
-  <source src="media/cases/case-08.mp4" type="video/mp4">
-</video>
+[![Case 8 video preview](media/cases/case-08.jpg)](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-08.mp4)
 
-[Open video file](media/cases/case-08.mp4)
+[Open video file](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-08.mp4)
 
 Type: Evaluation | Date: 2026-06-26
 
@@ -267,11 +251,9 @@ Type: Evaluation | Date: 2026-06-26
 - Practical workflow: choose a public text story, adapt it into narration segments, generate the voice pass, then pair it with simple visuals or captions and measure whether the format works as a repeatable content pipeline.
 - Watch-outs: This is a Demo, not a rights or growth guarantee. You still need permission or proper source handling for the story content, plus audience testing before calling it a scalable channel.
 
-<video controls preload="metadata" poster="media/cases/case-09.jpg" width="760">
-  <source src="media/cases/case-09.mp4" type="video/mp4">
-</video>
+[![Case 9 video preview](media/cases/case-09.jpg)](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-09.mp4)
 
-[Open video file](media/cases/case-09.mp4)
+[Open video file](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-09.mp4)
 
 Type: Demo | Date: 2026-06-29
 
@@ -299,11 +281,9 @@ Type: Evaluation | Date: 2026-06-26
 - Practical workflow: generate short 10-15 second audio tests first, compare them against native video-model audio, and only move to downstream video when the audio direction is strong enough.
 - Watch-outs: Comments add unresolved issues around reference voice conversion and using generated audio with Seedance lip-sync. This remains Evaluation because it validates a low-cost testing role, not a complete final pipeline.
 
-<video controls preload="metadata" poster="media/cases/case-11.jpg" width="760">
-  <source src="media/cases/case-11.mp4" type="video/mp4">
-</video>
+[![Case 11 video preview](media/cases/case-11.jpg)](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-11.mp4)
 
-[Open video file](media/cases/case-11.mp4)
+[Open video file](https://raw.githubusercontent.com/cheercheung/Awesome-Seed-Audio-1.0-Guide-and-Usecases/main/media/cases/case-11.mp4)
 
 Type: Evaluation | Date: 2026-06-25
 
